@@ -1,7 +1,7 @@
 {
   "version": 1.0.0,
   "metadata": {
-    "protocol_versions": ["1.0.0"],
+    "protocol_versions": ["5.0"],
   },
 }
 

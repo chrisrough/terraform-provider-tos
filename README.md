@@ -2,6 +2,3 @@
 Terraform Provider Tufin (TOS)
 
 TODO ..
-
-
-

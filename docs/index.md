@@ -9,15 +9,26 @@ Visit [Tufin](https://tufin.com) for more information on TOS.
 
 ### Data Sources
 
+[tufin_server](data-sources/server.md)
+
+[tufin_rule](data-sources/rule.md)
+
+[tufin_service](data-sources/service.md)
+
+[tufin_zone](data-sources/zone.md)
+
+[tufin_zone_entry](data-sources/zone_entry.md)
+
 
 ### Resources
 
 [tufin_server](resources/server.md)
+
 [tufin_rule](resources/rule.md)
 
+[tufin_zone](resources/zone.md)
 
-
-
+[tufin_zone_entry](resources/zone_entry.md)
 
 
 ## Provider Example Usage

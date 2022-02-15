@@ -8,11 +8,12 @@ terraform {
 }
 
 provider "tufin" {
-  sc_url    = "https://18.196.108.237"
-  sc_user   = "r"
-  sc_passwd = "P**8zeV)rrerozqg7ix>3-oC&=rHZ%3H"
+  sc_url    = "https://138.190.192.234"
+  sc_user   = "tsgrure1-lab"
+  sc_passwd = "tsgrure1"
 
-  st_url    = "https://18.196.108.237"
-  st_user   = "admin"
-  st_passwd = "P**8zeV)rrerozqg7ix>3-oC&=rHZ%3H"
+  st_url    = "https://138.190.192.231"
+  st_user   = "tsgrure1"
+  st_passwd = "tsgrure1"
 }
+

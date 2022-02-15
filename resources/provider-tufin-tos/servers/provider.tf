@@ -1,8 +1,8 @@
 terraform {
   required_providers {
     tufin = {
-      version = "~> 1.0.0"
-      source  = "hashicorp.com/rc/tos"
+      source  = "chrisrough/tos"
+      version = "1.0.0"
     }
   }
 }

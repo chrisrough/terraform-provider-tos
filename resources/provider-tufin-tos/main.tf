@@ -1,8 +1,8 @@
 module "servers" {
   source = "./servers"
 
-  domain = "Default"
-  app = "3Rivers"
+  domain = "scs0"
+  app    = "Cloud"
 
   default_tags = {
     project     = "Tufin Terraform Provider"
@@ -15,8 +15,8 @@ module "servers" {
 module "services" {
   source = "./services"
 
-  domain = "Default"
-  app = "3Rivers"
+  domain = "scs0"
+  app    = "Cloud"
 
   default_tags = {
     project     = "Tufin Terraform Provider"

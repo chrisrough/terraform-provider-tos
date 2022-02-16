@@ -17,19 +17,19 @@ output "mars_1" {
   value = tufin_server.mars_1
 }
 
-data "tufin_servers" "servers_by_name" {
+data "tufin_servers" "mars_1_name" {
   name = "MARS_1"
 
   domain = var.domain
   app    = var.app
 }
 
-output "servers_by_name" {
-  value       = data.tufin_servers.servers_by_name.name
+output "mars_1_name" {
+  value       = data.tufin_servers.mars_1_name.name
   description = "servers by name, name"
 }
-output "servers_by_name_servers" {
-  value       = data.tufin_servers.servers_by_name.servers
+output "mars_1_servers" {
+  value       = data.tufin_servers.mars_1_name.servers
   description = "servers by name, servers"
 }
 

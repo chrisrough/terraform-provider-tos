@@ -4,7 +4,7 @@ resource "tufin_server" "pluto_1" {
 
   name           = "PLUTO_1"
   group_id       = 1
-  ip             = "1.2.3.4"
+  ip             = "4.3.2.1"
   security_level = ""
   comment        = "Test Server PLUTO 1 .. Created by Tufin Terraform Provider"
   tags = merge(

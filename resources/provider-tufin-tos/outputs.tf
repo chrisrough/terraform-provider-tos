@@ -1,10 +1,10 @@
 # module servers
-output "tufin_servers_by_name" {
-  value       = module.servers.servers_by_name
+output "tufin_servers_mars_1_name" {
+  value       = module.servers.mars_1_name
   description = "server name"
 }
-output "tufin_servers_by_name_servers" {
-  value       = module.servers.servers_by_name_servers
+output "tufin_servers_mars_1_servers" {
+  value       = module.servers.mars_1_servers
   description = "servers by name"
 }
 

@@ -4,7 +4,7 @@ terraform {
 
 terraform {
   required_providers {
-    tos = {
+    tufin = {
       source  = "chrisrough/tos"
       version = "1.0.0"
     }

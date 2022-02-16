@@ -1,13 +1,13 @@
 terraform {
   required_providers {
-    tos = {
+    tufin = {
       source  = "chrisrough/tos"
       version = "1.0.0"
     }
   }
 }
 
-provider "tos" {
+provider "tufin" {
   sc_url    = "https://138.190.192.234"
   sc_user   = "tsgrure1-lab"
   sc_passwd = "tsgrure1"

@@ -24,9 +24,9 @@ Visit [Tufin](https://tufin.com) for more information on TOS.
 
 [tos_server](resources/server.md)
 
-[tos_subnet](data-sources/subnet.md)
+[tos_subnet](resources/subnet.md)
 
-[tos_range](data-sources/range.md)
+[tos_range](resources/range.md)
 
 [tos_rule](resources/rule.md)
 

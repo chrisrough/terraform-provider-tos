@@ -1,4 +1,4 @@
-resource "tufin_server" "pluto_1" {
+resource "tos_server" "pluto_1" {
   domain = var.domain
   app    = var.app
 
@@ -14,10 +14,10 @@ resource "tufin_server" "pluto_1" {
     })
 }
 output "pluto_1" {
-  value = tufin_server.pluto_1
+  value = tos_server.pluto_1
 }
 
-data "tufin_servers" "pluto_1_name" {
+data "tos_servers" "pluto_1_name" {
   name = "pluto_1"
 
   domain = var.domain
@@ -25,11 +25,11 @@ data "tufin_servers" "pluto_1_name" {
 }
 
 output "pluto_1_name" {
-  value       = data.tufin_servers.pluto_1_name.name
+  value       = data.tos_servers.pluto_1_name.name
   description = "servers by name, name"
 }
 output "pluto_1_servers" {
-  value       = data.tufin_servers.pluto_1_name.servers
+  value       = data.tos_servers.pluto_1_name.servers
   description = "servers by name, servers"
 }
 

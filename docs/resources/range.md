@@ -1,18 +1,19 @@
-# Resource `tos_server`
+# Resource `tos_range`
 
-The `tos_server` Resource manages Server (Host) Network Objects in Tufin SA.
+The `tos_range` Resource manages Range Network Objects in Tufin SA.
 
 ## Example Usage
 
 ```terraform
-resource "tos_server" "pluto_1" {
+resource "tos_range" "pluto_1" {
   domain = var.domain
   app    = var.app
 
   name           = "PLUTO_1"
   group_id       = 1
-  ip             = "4.3.2.1"
-  comment        = "Test Server PLUTO 1 .. Created by Tufin Terraform Provider"
+  first_ip       = "1.2.3.1"
+  last_ip        = "1.2.3.4"
+  comment        = "Test Range PLUTO 1 .. Created by Tufin Terraform Provider"
   tags = merge(
   var.default_tags,
   {

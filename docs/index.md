@@ -1,6 +1,6 @@
 # Terraform Provider TOS (Tufin Orchestration Suite)
 
-Terraform Provider for Tufin Orchestration Suite with Resource Management in Secure App (SA), Secure Change (SC) and
+Terraform Provider for Tufin Orchestration Suite (TOS) with Resource Management in Secure App (SA), Secure Change (SC) and
 Secure Track (ST).
 
 Visit [Tufin](https://tufin.com) for more information on TOS.
@@ -9,26 +9,30 @@ Visit [Tufin](https://tufin.com) for more information on TOS.
 
 ### Data Sources
 
-[tufin_server](data-sources/server.md)
+[tos_server](data-sources/server.md)
 
-[tufin_rule](data-sources/rule.md)
+[tos_rule](data-sources/rule.md)
 
-[tufin_service](data-sources/service.md)
+[tos_service](data-sources/service.md)
 
-[tufin_zone](data-sources/zone.md)
+[tos_zone](data-sources/zone.md)
 
-[tufin_zone_entry](data-sources/zone_entry.md)
+[tos_zone_entry](data-sources/zone_entry.md)
 
 
 ### Resources
 
-[tufin_server](resources/server.md)
+[tos_server](resources/server.md)
 
-[tufin_rule](resources/rule.md)
+[tos_subnet](data-sources/subnet.md)
 
-[tufin_zone](resources/zone.md)
+[tos_range](data-sources/range.md)
 
-[tufin_zone_entry](resources/zone_entry.md)
+[tos_rule](resources/rule.md)
+
+[tos_zone](resources/zone.md)
+
+[tos_zone_entry](resources/zone_entry.md)
 
 
 ## Provider Example Usage

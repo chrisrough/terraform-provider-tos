@@ -1,6 +1,6 @@
-# Resource `tufin_rule`
+# Resource `tos_rule`
 
-The `tufin_rule` Resource manages Application Connections in Tufin SA.
+The `tos_rule` Resource manages Application Connections in Tufin SA.
 
 ## Example Usage
 

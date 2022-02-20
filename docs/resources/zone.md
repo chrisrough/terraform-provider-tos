@@ -1,6 +1,6 @@
-# Resource `tufin_zone`
+# Resource `tos_zone`
 
-The `tufin_zone` Resource manages Zones in Tufin ST.
+The `tos_zone` Resource manages Zones in Tufin ST.
 
 ## Example Usage
 

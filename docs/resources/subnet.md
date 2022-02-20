@@ -1,18 +1,18 @@
-# Resource `tos_server`
+# Resource `tos_subnet`
 
-The `tos_server` Resource manages Server (Host) Network Objects in Tufin SA.
+The `tos_subnet` Resource manages Subnet Network Objects in Tufin SA.
 
 ## Example Usage
 
 ```terraform
-resource "tos_server" "pluto_1" {
+resource "tos_subnet" "pluto_1" {
   domain = var.domain
   app    = var.app
 
   name           = "PLUTO_1"
   group_id       = 1
-  ip             = "4.3.2.1"
-  comment        = "Test Server PLUTO 1 .. Created by Tufin Terraform Provider"
+  ip             = "4.3.2.0/29"
+  comment        = "Test Subnet PLUTO 1 .. Created by Tufin Terraform Provider"
   tags = merge(
   var.default_tags,
   {

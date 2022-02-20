@@ -5,7 +5,7 @@ Secure Track (ST).
 
 Visit [Tufin](https://tufin.com) for more information on TOS.
 
-## Introduction
+## Overview
 
 ### Data Sources
 
@@ -35,14 +35,14 @@ Visit [Tufin](https://tufin.com) for more information on TOS.
 [tos_zone_entry](resources/zone_entry.md)
 
 
-## Provider Example Usage
+## Provider Usage Example
 
 ```terraform
 terraform {
   required_providers {
     tufin = {
       source  = "chrisrough/tos"
-      version = "1.0.0"
+      version = "1.0.3"
     }
   }
 }

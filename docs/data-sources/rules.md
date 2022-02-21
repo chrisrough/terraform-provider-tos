@@ -1,6 +1,6 @@
-# Data Source `tos_zone`
+# Data Source `tos_rules`
 
-The `tos_zone` Data Source lists Zones from Tufin ST.
+The `tos_rules` Data Source lists Application Connections from Tufin SA.
 
 ## Example Usage
 

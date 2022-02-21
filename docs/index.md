@@ -9,15 +9,15 @@ Visit [Tufin](https://tufin.com) for more information on TOS.
 
 ### Data Sources
 
-[tos_server](data-sources/server.md)
+[tos_networkobjects](data-sources/networkobjects.md)
 
-[tos_rule](data-sources/rule.md)
+[tos_rules](data-sources/rules.md)
 
-[tos_service](data-sources/service.md)
+[tos_services](data-sources/services.md)
 
-[tos_zone](data-sources/zone.md)
+[tos_zones](data-sources/zones.md)
 
-[tos_zone_entry](data-sources/zone_entry.md)
+[tos_zone_entries](data-sources/zone_entries.md)
 
 
 ### Resources

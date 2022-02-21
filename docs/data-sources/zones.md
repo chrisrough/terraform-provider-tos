@@ -1,6 +1,6 @@
-# Data Source `tos_zone_entry`
+# Data Source `tos_zones`
 
-The `tos_zone_entry` Data Source lists Zone Entries from Tufin ST.
+The `tos_zones` Data Source lists Zones from Tufin ST.
 
 ## Example Usage
 

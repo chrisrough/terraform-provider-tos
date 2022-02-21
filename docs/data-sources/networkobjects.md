@@ -1,6 +1,6 @@
-# Data Source `tos_rule`
+# Data Source `tos_networkobjects`
 
-The `tos_rule` Data Source lists Application Connections from Tufin SA.
+The `tos_networkobjects` Data Source lists Network Objects from Tufin SA.
 
 ## Example Usage
 

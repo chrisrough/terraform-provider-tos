@@ -1,6 +1,6 @@
-# Data Source `tos_service`
+# Data Source `tos_zone_entries`
 
-The `tos_service` Data Source lists Application Services from Tufin SA.
+The `tos_zone_entries` Data Source lists Zone Entries from Tufin ST.
 
 ## Example Usage
 

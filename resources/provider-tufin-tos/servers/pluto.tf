@@ -16,7 +16,7 @@ output "pluto_1" {
   value = tos_server.pluto_1
 }
 
-data "tos_servers" "pluto_1_name" {
+data "tos_networkobjects" "pluto_1_name" {
   name = "pluto_1"
 
   domain = var.domain

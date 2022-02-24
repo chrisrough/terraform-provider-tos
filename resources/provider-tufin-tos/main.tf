@@ -1,3 +1,4 @@
+/*
 module "servers" {
   source = "./servers"
 
@@ -25,3 +26,4 @@ module "services" {
     version     = "1.0.3"
   }
 }
+*/

@@ -1,4 +1,4 @@
-resource "tos_subet" "Subnet_mars" {
+resource "tos_subnet" "Subnet_mars" {
   domain         = var.domain
   app            = var.app
   name           = "SUB_MARS_11"

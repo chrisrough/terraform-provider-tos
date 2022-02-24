@@ -24,11 +24,11 @@ data "tos_servers" "pluto_1_name" {
 }
 
 output "pluto_1_name" {
-  value       = data.tos_servers.pluto_1_name.name
+  value       = data.tos_networkobjects.pluto_1_name.name
   description = "servers by name, name"
 }
 output "pluto_1_servers" {
-  value       = data.tos_servers.pluto_1_name.servers
+  value       = data.tos_networkobjects.pluto_1_name.servers
   description = "servers by name, servers"
 }
 

@@ -1,6 +1,6 @@
 ---
 page_title: "Resource Tagging"
-subcategory: "Tagging"
+subcategory: "Concepts"
 ---
 
 # Resource Tagging

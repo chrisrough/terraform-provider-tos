@@ -28,6 +28,6 @@ output "mars_1_name" {
   description = "servers by name, name"
 }
 output "mars_1_servers" {
-  value       = data.tos_networkobjects.mars_1_name.servers
+  value       = data.tos_networkobjects.mars_1_name.networkobjects
   description = "servers by name, servers"
 }

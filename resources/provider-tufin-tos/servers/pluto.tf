@@ -28,7 +28,7 @@ output "pluto_1_name" {
   description = "servers by name, name"
 }
 output "pluto_1_servers" {
-  value       = data.tos_networkobjects.pluto_1_name.servers
+  value       = data.tos_networkobjects.pluto_1_name.networkobjects
   description = "servers by name, servers"
 }
 

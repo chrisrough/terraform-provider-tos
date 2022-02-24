@@ -1,4 +1,3 @@
-/*
 module "servers" {
   source = "./servers"
 
@@ -13,6 +12,7 @@ module "servers" {
   }
 }
 
+/*
 module "services" {
   source = "./services"
 

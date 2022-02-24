@@ -5,7 +5,6 @@ resource "tos_server" "pluto_1" {
   name           = "PLUTO_11"
   group_id       = 1
   ip             = "4.3.2.11"
-  security_level = ""
   comment        = "Test Server PLUTO 11 .. Created by Tufin Terraform Provider"
   tags = merge(
     var.default_tags,

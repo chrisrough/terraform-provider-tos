@@ -5,7 +5,6 @@ resource "tos_server" "mars_1" {
   name           = "MARS_11"
   group_id       = 1
   ip             = "1.2.3.41"
-  security_level = ""
   comment        = "Test Server MARS 11 .. Created by Tufin Terraform Provider"
   tags = merge(
     var.default_tags,

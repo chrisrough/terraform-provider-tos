@@ -2,11 +2,11 @@ resource "tos_server" "pluto_1" {
   domain = var.domain
   app    = var.app
 
-  name           = "PLUTO_1"
+  name           = "PLUTO_11"
   group_id       = 1
-  ip             = "4.3.2.1"
+  ip             = "4.3.2.11"
   security_level = ""
-  comment        = "Test Server PLUTO 1 .. Created by Tufin Terraform Provider"
+  comment        = "Test Server PLUTO 11 .. Created by Tufin Terraform Provider"
   tags = merge(
     var.default_tags,
     {

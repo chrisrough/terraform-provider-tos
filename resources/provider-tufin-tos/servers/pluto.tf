@@ -10,7 +10,7 @@ resource "tos_server" "pluto_1" {
   tags = merge(
     var.default_tags,
     {
-      network_object_SA = format("%s", "PLUTO_1")
+      network_object_SA = format("Name = %s", "PLUTO_1")
     })
 }
 output "pluto_1" {

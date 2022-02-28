@@ -12,7 +12,7 @@ provider "aws" {
   region = var.aws_region
 }
 
-provider "tufin" {
+provider "tos" {
   sc_url    = "https://138.190.192.234"
   sc_user   = "tsgrure1-lab"
   sc_passwd = "tsgrure1"

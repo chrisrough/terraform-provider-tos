@@ -7,6 +7,11 @@ terraform {
   }
 }
 
+# aws region
+provider "aws" {
+  region = var.aws_region
+}
+
 provider "tufin" {
   sc_url    = "https://138.190.192.234"
   sc_user   = "tsgrure1-lab"

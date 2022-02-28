@@ -30,6 +30,8 @@ Visit [Tufin](https://tufin.com) for more information on TOS.
 
 [tos_rule](resources/rule.md)
 
+[tos_ticket](resources/ticket.md)
+
 [tos_zone](resources/zone.md)
 
 [tos_zone_entry](resources/zone_entry.md)

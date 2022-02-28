@@ -8,7 +8,7 @@ module "servers" {
     project     = "Tufin Terraform Provider"
     description = "Tufin Terraform Provider Showcase"
     origin      = "provider-tufin-tos"
-    version     = "1.0.2"
+    version     = "1.0.3"
   }
 }
 
@@ -22,7 +22,7 @@ module "services" {
     project     = "Tufin Terraform Provider"
     description = "Tufin Terraform Provider Showcase"
     origin      = "provider-tufin-tos"
-    version     = "1.0.2"
+    version     = "1.0.3"
   }
 }
 

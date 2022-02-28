@@ -15,7 +15,7 @@ output "mars_1" {
   value = tos_server.mars_1
 }
 
-data "tos_server" "mars_1_name" {
+data "tos_networkobjects" "mars_1_name" {
   name = "MARS_1"
 
   domain = var.domain

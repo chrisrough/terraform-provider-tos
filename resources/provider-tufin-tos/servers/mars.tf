@@ -32,7 +32,7 @@ output "mars_1_servers" {
   description = "servers by name, servers"
 }
 
-resource "tufin_server" "Subnet_mars" {
+resource "tos_server" "Subnet_mars" {
   domain = var.domain
   app = var.app
   name= "SUB_MARS_1"

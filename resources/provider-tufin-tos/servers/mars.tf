@@ -23,11 +23,11 @@ data "tos_networkobjects" "mars_1_name" {
 }
 
 output "mars_1_name" {
-  value       = data.tos_servers.mars_1_name.name
+  value       = data.tos_networkobjects.mars_1_name.name
   description = "servers by name, name"
 }
 output "mars_1_servers" {
-  value       = data.tos_servers.mars_1_name.servers
+  value       = data.tos_networkobjects.mars_1_name.servers
   description = "servers by name, servers"
 }
 

@@ -4,7 +4,7 @@ terraform {
       source  = "chrisrough/tos"
       version = "1.0.3"
     }
-        aws = {
+    aws = {
       source  = "hashicorp/aws"
       version = "~> 4.2.0"
     }

@@ -2,7 +2,7 @@
 
 # get Lambda Function
 data "aws_lambda_function" "application" {
-  function_name = "application"
+  function_name = "application-TUFIN_DEV"
 }
 # show lambda function
 output "lambda" {

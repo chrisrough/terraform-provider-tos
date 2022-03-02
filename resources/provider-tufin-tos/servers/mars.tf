@@ -3,7 +3,7 @@ resource "tos_server" "mars_2" {
    app    = var.app
    name           = "MARS_2"
    group_id       = 1
-   ip             = "1.2.3.41"
+   ip             = "1.2.3.41/32"
    comment        = "Test Server MARS 2 .. Created by Tufin Terraform Provider"
    tags = merge(
     var.default_tags,

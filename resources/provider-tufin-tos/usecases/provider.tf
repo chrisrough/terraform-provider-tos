@@ -4,7 +4,7 @@ terraform {
       source  = "chrisrough/tos"
       version = "1.0.3"
     }
-        aws = {
+    aws = {
       source  = "hashicorp/aws"
       version = "~> 4.2.0"
     }
@@ -14,7 +14,8 @@ terraform {
 
 # aws region
 provider "aws" {
-  region = var.aws_region
+#  profile = "default"
+  region  = "eu-central-1"
 }
 
 provider "tos" {

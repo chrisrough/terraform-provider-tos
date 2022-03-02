@@ -14,7 +14,7 @@ terraform {
 
 # aws region
 provider "aws" {
-  profile = "default"
+#  profile = "default"
   region  = "eu-central-1"
 }
 

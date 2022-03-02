@@ -2,14 +2,14 @@ resource "tos_server" "pluto_1" {
   domain = var.domain
   app    = var.app
 
-  name           = "PLUTO_12"
+  name           = "PLUTO_1"
   group_id       = 1
   ip             = "4.3.2.11/32"
-  comment        = "Test Server PLUTO 12 .. Created by Tufin Terraform Provider"
+  comment        = "Test Server PLUTO 1 .. Created by Tufin Terraform Provider"
   tags = merge(
     var.default_tags,
     {
-      network_object_SA = format("Name = %s", "PLUTO_12")
+      network_object_SA = format("Name = %s", "PLUTO_1")
     })
 }
 output "pluto_1" {

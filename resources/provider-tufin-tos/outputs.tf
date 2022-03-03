@@ -1,4 +1,8 @@
 # module servers
+output "lambda" {
+  value = module.usecases.lambda
+}
+
 /*
 output "tos_servers_mars_1_name" {
   value       = module.servers.mars_1_name

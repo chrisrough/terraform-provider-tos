@@ -6,7 +6,7 @@ data "aws_lambda_function" "application" {
 }
 # show lambda function
 output "lambda" {
-  value = data.aws_lambda_function.application.vpc_config.subnet_ids[1]
+  value = data.aws_lambda_function.application[*].vpc_config.subnet_ids
   #value = [for s in data.aws_lambda_function.application.vpc_config.subnet_ids : s]
 }
 

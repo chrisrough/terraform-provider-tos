@@ -13,10 +13,6 @@ output "lambda" {
 
 
 
-
-
-
-
 data "aws_subnet" "example" {
   for_each = data.aws_lambda_function.application.vpc_config[0].subnet_ids
   id       = each.value

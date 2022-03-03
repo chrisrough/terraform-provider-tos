@@ -6,10 +6,21 @@ data "aws_lambda_function" "application" {
 }
 # show lambda function
 output "lambda" {
+  # get all subnet ID's
   value = data.aws_lambda_function.application.vpc_config[*].subnet_ids
   #value = [for s in data.aws_lambda_function.application.vpc_config.subnet_ids : s]
 }
 
+data "aws_subnet" "lambda_sub_1" {
+    id = data.aws_lambda_function.application.vpc_config[*].subnet_ids[0]
+}
+
+output "lambda_sub_1" {
+  # get all subnet ID's
+  value = data.aws_subnet.lambda_sub_1.cidr_block
+  description = " Subnet 1 from lambda function "
+  #value = [for s in data.aws_lambda_function.application.vpc_config.subnet_ids : s]
+}
 # Create lambda IP Range at tufin
 #resource "tufin_subnet" "Subnet_lambda" {
 #  domain = var.domain

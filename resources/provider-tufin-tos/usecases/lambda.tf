@@ -39,8 +39,8 @@ resource "tos_subnet" "subnet_from_lambda" {
   app      = var.app
   name     = format("SUBNET_%s", (count.index + 1))
   group_id = 1
-  # ip       = data.aws_subnet.example[count.index]
-  ip = "1.1.1.1/24"
+  ip       = element(data.aws_subnet.example, count.index)
+  # ip = "1.1.1.1/24"
   comment  = format("SUBNET_%s .. Created by Tufin Terraform Provider", (count.index + 1))
   tags     = merge(
     var.default_tags,

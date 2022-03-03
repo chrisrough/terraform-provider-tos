@@ -6,7 +6,7 @@ data "aws_lambda_function" "application" {
 }
 # show lambda function
 output "lambda" {
-  value = data.aws_lambda_function.application
+  value = data.aws_lambda_function.application.vpc_config.subnet_ids
 }
 
 # Create lambda IP Range at tufin

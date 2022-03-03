@@ -22,7 +22,7 @@ output "subnet_cidr_blocks" {
 
 
 # Create lambda IP Range at tufin
-resource "tufin_subnet" "Subnet_lambda_2" {
+resource "tos_subnet" "Subnet_lambda_2" {
   domain = var.domain
   app = var.app
   name= "Sub_lambda_2"

@@ -22,13 +22,29 @@ output "subnet_cidr_blocks" {
 
 
 # Create lambda IP Range at tufin
-resource "tos_subnet" "Subnet_lambda_2" {
-  domain = var.domain
-  app = var.app
-  name= "Sub_lambda_2"
-  group_id= 1
-  ip= data.aws_subnet.example[0]
-  security_level = ""
-  comment= "Test Subnet lambda 2 .. Created by Tufin Terraform Provider"
-  tags = merge( var.default_tags, { network_object_SA = format("%s", "lambda_1") })
+#resource "tos_subnet" "Subnet_lambda_2" {
+#  domain = var.domain
+ # app = var.app
+ # name= "Sub_lambda_2"
+#  group_id= 1
+#  ip= data.aws_subnet.example[0]
+#  security_level = ""
+#  comment= "Test Subnet lambda 2 .. Created by Tufin Terraform Provider"
+ # tags = merge( var.default_tags, { network_object_SA = format("%s", "lambda_1") })
+#}
+resource "tos_subnet" "subnet_from_lambda" {
+  count = length(data.aws_subnet.example)
+
+  domain   = var.domain
+  app      = var.app
+  name     = format("SUBNET_%s", (count.index + 1))
+  group_id = 1
+  ip       = data.aws_subnet.example[count.index]
+  comment  = format("SUBNET_%s .. Created by Tufin Terraform Provider", (count.index + 1))
+  tags     = merge(
+    var.default_tags,
+    {
+      network_object_SA = format("SUBNET_%s .. Created by Tufin Terraform Provider", (count.index + 1))
+    }
+  )
 }

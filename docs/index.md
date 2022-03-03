@@ -28,6 +28,8 @@ Visit [Tufin](https://tufin.com) for more information on TOS.
 
 [tos_range](resources/range.md)
 
+[tos_group](resources/group.md)
+
 [tos_rule](resources/rule.md)
 
 [tos_ticket](resources/ticket.md)

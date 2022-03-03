@@ -12,7 +12,7 @@ output "lambda" {
 }
 
 data "aws_subnet" "lambda_sub_1" {
-    id = data.aws_lambda_function.application.vpc_config[0].subnet_ids[0]
+    id = data.aws_lambda_function.application.vpc_config[0].subnet_ids
 }
 
 output "lambda_sub_1" {

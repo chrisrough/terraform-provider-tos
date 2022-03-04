@@ -21,15 +21,12 @@ output "subnet_cidr_blocks" {
 }
 
 resource "tos_subnet" "subnet_from_lambda" {
-  # count = length(data.aws_subnet.example)
   for_each = data.aws_subnet.example
   domain   = var.domain
   app      = var.app
   name     = format("SUBNET_%s", each.value.id)
   group_id = 1
-  # ip       = each.value.id
    ip       = each.value.cidr_block
-  # ip = "1.1.1.1/24"
   comment  = format("SUBNET_%s .. Created by Tufin Terraform Provider", each.value.id)
   tags     = merge(
     var.default_tags,

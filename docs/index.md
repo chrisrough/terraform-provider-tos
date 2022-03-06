@@ -15,6 +15,8 @@ Visit [Tufin](https://tufin.com) for more information on TOS.
 
 [tos_services](data-sources/services.md)
 
+[tos_tickets](data-sources/tickets.md)
+
 [tos_zones](data-sources/zones.md)
 
 [tos_zone_entries](data-sources/zone_entries.md)

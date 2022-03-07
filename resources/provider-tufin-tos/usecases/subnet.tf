@@ -28,8 +28,10 @@ resource "tos_subnet" "subnet_ora_prd" {
 }
 
 # get Zone
-data "tos_zone" "zone_ora_prd" {
+data "tos_zones" "zone_ora_prd" {
   name    = "TestZone1"
+  domain = var.domain
+  app    = var.app
 }
 
 # show lambda function

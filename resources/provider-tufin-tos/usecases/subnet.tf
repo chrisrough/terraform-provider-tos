@@ -10,7 +10,6 @@ variable "subnet_ora_prd_ip" {
   type        = string
   default     = "10.144.23.0/24"
 }
-
 # add subnet to SecureAPP
 resource "tos_subnet" "subnet_ora_prd" {
   domain = var.domain
@@ -26,19 +25,16 @@ resource "tos_subnet" "subnet_ora_prd" {
     }
   )
 }
-
 # get Zone
 data "tos_zones" "zone_ora_prd" {
   name    = "TestZone1"
   domain = var.domain
   app    = var.app
 }
-
 # show zone
 output "zone_ora_prd" {
   value = data.tos_zones.zone_ora_prd
 }
-
 #add zone entry to SecureTrack
 resource "tos_zone_entry" "zone_entry_1" {
   zone_id = data.tos_zones.zone_ora_prd.id
@@ -48,17 +44,16 @@ resource "tos_zone_entry" "zone_entry_1" {
   domain = var.domain
   app    = var.app
 }
-#resource "tos_zone_entry" "zone_ora_prd" {
-#  name    = "TestZone1"
-#  comment = "Test Zone 1 .. Created by Tufin Terraform Provider"
-#  domain = var.domain
-#  app    = var.app
-#  tags = merge(
-#  var.default_tags,
-#  {
-#    name_ST = format("%s", "TestZone1")
-#  })
-#}
+resource "tos_zone_entry" "zone_entry_with_zone_lookup" {
+  count   = length(data.tos_zones.zone_ora_prd) > 0 ? 1 : 0
+  zone_id = data.tos_zones.zone_ora_prd.zones[0].id
+  ip      = "1.2.3.0"
+  prefix  = "30"
+  comment = "Test Zone Entry With Zone Lookup .. Created by Terraform Provider TOS"
+  domain = var.domain
+  app    = var.app
+}
+
 
 #output "zone_1" {
 #  value = tufin_zone.zone_1

@@ -10,6 +10,9 @@ output "lambda" {
 output "subnet_cidr_blocks" {
   value = module.usecases.subnet_cidr_blocks
 }
+output "zone_ora_prd" {
+  value = module.usecases.zone_ora_prd
+}
 
 
 /*

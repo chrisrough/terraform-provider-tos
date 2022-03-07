@@ -26,7 +26,7 @@ resource "tos_subnet" "subnet_from_lambda" {
   app      = var.app
   name     = format("SUBNET_%s", each.value.id)
   group_id = 1
-   ip       = each.value.cidr_block
+  ip       = each.value.cidr_block
   comment  = format("SUBNET_%s .. Created by Tufin Terraform Provider", each.value.id)
   tags     = merge(
     var.default_tags,

@@ -11,7 +11,7 @@ variable "subnet_ora_pre_ip" {
   default     = "10.144.24.0/24"
 }
 # add subnet to SecureAPP
-resource "tos_subnet" "subnet_ora_prd" {
+resource "tos_subnet" "subnet_ora_pre" {
   domain = var.domain
   app    = var.app
   name           = var.subnet_ora_pre_name

@@ -36,14 +36,6 @@ output "zone_ora_prd" {
   value = data.tos_zones.zone_ora_prd
 }
 #add zone entry to SecureTrack
-resource "tos_zone_entry" "zone_entry_1" {
-  zone_id = data.tos_zones.zone_ora_prd.id
-  ip      = "10.144.17.0.0"
-  prefix  = "16"
-  comment = "Test Zone Entry 1 .. Created by Terraform Provider TOS"
-  domain = var.domain
-  app    = var.app
-}
 resource "tos_zone_entry" "zone_entry_with_zone_lookup" {
   count   = length(data.tos_zones.zone_ora_prd) > 0 ? 1 : 0
   zone_id = data.tos_zones.zone_ora_prd.zones[0].id

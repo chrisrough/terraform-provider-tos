@@ -27,6 +27,16 @@ resource "tos_subnet" "subnet_ora_prd" {
   )
 }
 
+# get Zone
+data "tos_zone" "zone_ora_prd" {
+  name    = "TestZone1"
+}
+
+# show lambda function
+output "zone_ora_prd" {
+  value = data.tos_zone.zone_ora_prd
+}
+
 #add zone entry to SecureTrack
 #resource "tos_zone_entry" "zone_ora_prd" {
 #  name    = "TestZone1"

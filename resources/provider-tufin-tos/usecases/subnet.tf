@@ -37,7 +37,7 @@ output "zone_ora_prd" {
 }
 #add zone entry to SecureTrack
 resource "tos_zone_entry" "zone_entry_with_zone_lookup" {
-  count   = length(data.tos_zones.zone_ora_prd)
+  count   = length(data.tos_zones.zone_ora_prd.id)
   zone_id = data.tos_zones.zone_ora_prd.zones[count.index].id
   ip      = "1.2.3.0"
   prefix  = "30"

@@ -22,7 +22,7 @@ resource "tos_subnet" "subnet_ora_prd" {
   tags     = merge(
     var.default_tags,
     {
-      network_object_SA = format("SUBNET_%s .. Created by Tufin Terraform Provider")
+      network_object_SA = format("SUBNET .. Created by Tufin Terraform Provider" )
     }
   )
 }

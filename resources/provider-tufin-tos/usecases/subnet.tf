@@ -36,7 +36,7 @@ data "tos_zones" "zone_ora_prd" {
 
 # show lambda function
 output "zone_ora_prd" {
-  value = data.tos_zone.zone_ora_prd
+  value = data.tos_zones.zone_ora_prd
 }
 
 #add zone entry to SecureTrack

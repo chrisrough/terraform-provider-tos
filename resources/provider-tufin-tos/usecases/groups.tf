@@ -26,19 +26,19 @@ resource "tos_subnet" "subnet_ora_pre" {
   )
 }
 # add subnet to Group
-resource "tos_group" "group_1" {
+resource "tos_group" "group_ora-pre" {
   domain = var.domain
   app    = var.app
 
-  name    = "GROUP_1"
+  name    = "GROUP_ora-pre"
   comment = "GROUP 1 .."
 
   members = [
-    tos_subnet.subnet_ora_prd.name
+    tos_subnet.subnet_ora_pre.name
   ]
   tags = merge(
     var.default_tags,
     {
-      network_object_SA = format("%s", "GROUP_1")
+      network_object_SA = format("%s", "GROUP_ora-pre")
     })
 }

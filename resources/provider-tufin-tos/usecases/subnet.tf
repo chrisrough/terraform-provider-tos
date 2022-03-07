@@ -34,12 +34,20 @@ data "tos_zones" "zone_ora_prd" {
   app    = var.app
 }
 
-# show lambda function
+# show zone
 output "zone_ora_prd" {
   value = data.tos_zones.zone_ora_prd
 }
 
 #add zone entry to SecureTrack
+resource "tos_zone_entry" "zone_entry_1" {
+  zone_id = tos_zones.zone_ora_prd.id
+  ip      = "10.144.17.0.0"
+  prefix  = "16"
+  comment = "Test Zone Entry 1 .. Created by Terraform Provider TOS"
+  domain = var.domain
+  app    = var.app
+}
 #resource "tos_zone_entry" "zone_ora_prd" {
 #  name    = "TestZone1"
 #  comment = "Test Zone 1 .. Created by Tufin Terraform Provider"

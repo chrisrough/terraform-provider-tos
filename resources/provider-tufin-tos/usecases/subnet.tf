@@ -33,7 +33,7 @@ data "tos_zones" "zone_ora_prd" {
 }
 # show zone
 output "zone_ora_prd" {
-  value = data.tos_zones.zone_ora_prd.
+  value = data.tos_zones.zone_ora_prd
 }
 #add zone entry to SecureTrack
 resource "tos_zone_entry" "zone_entry_with_zone_lookup" {

@@ -27,25 +27,24 @@ resource "tos_subnet" "subnet_ora_prd" {
 }
 # get Zone
 data "tos_zones" "zone_ora_prd" {
-  name    = "TestZone1"
+  name    = "iAWS-nearProd-priv"
   domain = var.domain
   app    = var.app
 }
 # show zone
 output "zone_ora_prd" {
-  value = data.tos_zones.zone_ora_prd
+  value = data.tos_zones.zone_ora_prd.
 }
 #add zone entry to SecureTrack
 resource "tos_zone_entry" "zone_entry_with_zone_lookup" {
-  count   = length(data.tos_zones.zone_ora_prd) > 0 ? 1 : 0
-  zone_id = data.tos_zones.zone_ora_prd.zones[0].id
+  count   = length(data.tos_zones.zone_ora_prd)
+  zone_id = data.tos_zones.zone_ora_prd.zones[count.index].id
   ip      = "1.2.3.0"
   prefix  = "30"
   comment = "Test Zone Entry With Zone Lookup .. Created by Terraform Provider TOS"
   domain = var.domain
   app    = var.app
 }
-
 
 #output "zone_1" {
 #  value = tufin_zone.zone_1

@@ -15,7 +15,7 @@ resource "tos_subnet" "subnet_ora_pre" {
   domain = var.domain
   app    = var.app
   name           = var.subnet_ora_pre_name
-  group_id       = 1
+ # group_id       = 1
   ip             = var.subnet_ora_pre_ip
   comment  = format("SUBNET .. Created by Tufin Terraform Provider")
   tags     = merge(

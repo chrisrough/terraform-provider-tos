@@ -15,7 +15,7 @@ resource "tos_subnet" "subnet_ora_prd" {
   domain = var.domain
   app    = var.app
   name           = var.subnet_ora_prd_name
-  group_id       = 1
+#  group_id       = 1
   ip             = var.subnet_ora_prd_ip
   comment  = format("SUBNET .. Created by Tufin Terraform Provider")
   tags     = merge(
@@ -39,8 +39,7 @@ output "zone_ora_prd" {
 resource "tos_zone_entry" "zone_entry_with_zone_lookup" {
   count   = length(data.tos_zones.zone_ora_prd.zones)
   zone_id = data.tos_zones.zone_ora_prd.zones[count.index].id
-  ip      = "1.2.3.0"
-  prefix  = "30"
+  ip      = var.subnet_ora_prd_ip
   comment = "Test Zone Entry With Zone Lookup .. Created by Terraform Provider TOS"
   domain = var.domain
   app    = var.app

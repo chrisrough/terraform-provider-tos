@@ -11,6 +11,8 @@ Visit [Tufin](https://tufin.com) for more information on TOS.
 
 [tos_networkobjects](data-sources/networkobjects.md)
 
+[tos_applications](data-sources/applications.md)
+
 [tos_rules](data-sources/rules.md)
 
 [tos_services](data-sources/services.md)
@@ -31,6 +33,8 @@ Visit [Tufin](https://tufin.com) for more information on TOS.
 [tos_range](resources/range.md)
 
 [tos_group](resources/group.md)
+
+[tos_application](resources/application.md)
 
 [tos_rule](resources/rule.md)
 

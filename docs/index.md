@@ -68,6 +68,7 @@ provider "tufin" {
 }
 ```
 
+
 ## Argument Reference
 
 * `sc_url` - Secure Change URL (Required)

@@ -1,8 +1,12 @@
 ---
 page_title: "Provider Modes"
 ---
+The provider can be configured in two different modes with the difference of the backend to which it connects to:
 
-# Mode TOS
+* tos: Tufin Orchestration Suite (TOS).
+* tba: Tufin Backend API (TBA); this mode ist not intended for public use.
+
+# Mode tos
 
 ## Provider Usage Example
 
@@ -28,13 +32,13 @@ provider "tufin" {
 * `st_user` - Secure Track User (Required)
 * `st_passwd` - Secure Track Password (Required)
 
-# Mode TOS
+# Mode tba
 
 ```terraform
 provider "tos" {
-  tba_url    = "https://tufinapps-alb-1503945167.eu-central-1.elb.amazonaws.com"
-  tba_user   = "dashboard"
-  tba_passwd = "dashboard"
+  tba_url    = "<tba url>"
+  tba_user   = "<tba user>"
+  tba_passwd = "<tba password>"
 
   mode = "tba"
 }

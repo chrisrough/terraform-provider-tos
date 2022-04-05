@@ -20,12 +20,8 @@ Fully functional with the following limiations:
 * Mode tba
     * Datasource tos_rules not implemented yet.
     * Resources not implemented yet
-        * tos_group
-        * tos_range
         * tos_rule
-        * tos_server
         * tos_service
-        * tos_subnet
 
 # Release Candidates
 
@@ -33,4 +29,4 @@ None are published at this moment.
 
 # Deprecated Versions
 
-All versions prior to v1.1.0 must not be used.
+All versions prior to v1.1.0 must not be used!

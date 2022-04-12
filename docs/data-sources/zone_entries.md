@@ -12,7 +12,6 @@ TODO..
 
 * `attribute_name` - (Optional/Required) List arguments this resource takes.
 
-- `tags` - (Optional) Resource Tags; see [Tags](#Tags) below for details.
 
 
 

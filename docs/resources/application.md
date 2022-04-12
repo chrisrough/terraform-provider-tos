@@ -32,8 +32,7 @@ resource "tos_application" "application_1" {
 
 * `domain` - (Required) The Domain Name.
 * `app` - (Required) The Application Name.
-
-- `tags` - (Optional) Resource Tags; see [Tags](#Tags) below for details.
+* `tags` - (Optional) Resource Tags; see [Tags](#Tags) below for details.
 
 
 

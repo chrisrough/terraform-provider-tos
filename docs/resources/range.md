@@ -25,8 +25,7 @@ resource "tos_range" "pluto_1" {
 ## Argument Reference
 
 * `attribute_name` - (Optional/Required) List arguments this resource takes.
-
-- `tags` - (Optional) Resource Tags; see [Tags](#Tags) below for details.
+* `tags` - (Optional) Resource Tags; see [Tags](#Tags) below for details.
 
 
 

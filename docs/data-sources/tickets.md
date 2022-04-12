@@ -25,7 +25,6 @@ resource "tos_ticket" "ticket_1" {
 * `app` - (Required) The Application Name.
 * `attribute_name` - (Optional/Required) List arguments this resource takes.
 
-- `tags` - (Optional) Resource Tags; see [Tags](#Tags) below for details.
 
 
 

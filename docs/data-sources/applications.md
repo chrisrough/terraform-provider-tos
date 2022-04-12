@@ -12,7 +12,6 @@ TODO
 
 * `name` - (Required) The Name of Applications to be listed.
 
-- `tags` - (Optional) Resource Tags; see [Tags](#Tags) below for details.
 
 
 

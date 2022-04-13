@@ -16,7 +16,7 @@ data "tos_applications" "applications_by_name" {
 
 ## Attribute Reference
 
-In addition to all arguments above, the following attributes are exported:
+In addition to all arguments above, the following attributes are exported.
 
 List of matching Applications from Tufin SC each containing:
 

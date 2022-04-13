@@ -34,14 +34,11 @@ resource "tos_application" "application_1" {
 * `app` - (Required) The Application Name.
 * `tags` - (Optional) Resource Tags; see [Tags](#Tags) below for details.
 
-
-
 ## Attribute Reference
 
 In addition to all arguments above, the following attributes are exported:
 
 * `id` - The ID of the created Group.
-
 
 ### Tags
 

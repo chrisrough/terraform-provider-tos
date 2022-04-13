@@ -2,23 +2,20 @@
 
 The `tos_services` Data Source lists Application Services from Tufin SA.
 
-## Example Usage
+## Usage
 
 ```terraform
-TODO..
+data "tos_services" "services_by_name" {
+  name = "https"
+}
 ```
 
 ## Argument Reference
 
 * `attribute_name` - (Optional/Required) List arguments this resource takes.
-
-
-
+* `domain` - (Required) The Domain Name.
+* `app` - (Required) The Application Name.
 
 ## Attribute Reference
 
-* `network_object_SA` - List attributes that this resource exports.
-
-### Tags
-
-- `network_object_SA` - The Network Object Name in SA
+In addition to all arguments above, the following attributes are exported:

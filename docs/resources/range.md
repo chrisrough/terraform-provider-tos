@@ -27,8 +27,6 @@ resource "tos_range" "pluto_1" {
 * `attribute_name` - (Optional/Required) List arguments this resource takes.
 * `tags` - (Optional) Resource Tags; see [Tags](#Tags) below for details.
 
-
-
 ## Attribute Reference
 
 * `network_object_SA` - List attributes that this resource exports.

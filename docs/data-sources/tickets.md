@@ -2,20 +2,15 @@
 
 The `tos_tickets` Data Source lists Tickets from Tufin SA.
 
-## Example Usage
+## Usage
 
 ```terraform
-resource "tos_ticket" "ticket_1" {
-  domain = var.domain
-  app    = var.app
+data "tos_tickets" "tickets_by_subject" {
+  subject = "Test Ticket 1"
+}
 
-  subject = "test ticket 1"
-
-  tags = merge(
-    var.default_tags,
-    {
-      ticket_SA = format("%s", "test ticket 1")
-    })
+data "tos_tickets" "tickets_by_requester" {
+  requester = "tsgampa1"
 }
 ```
 
@@ -25,13 +20,6 @@ resource "tos_ticket" "ticket_1" {
 * `app` - (Required) The Application Name.
 * `attribute_name` - (Optional/Required) List arguments this resource takes.
 
-
-
-
 ## Attribute Reference
 
-* `network_object_SA` - List attributes that this resource exports.
-
-### Tags
-
-- `network_object_SA` - The Network Object Name in SA
+In addition to all arguments above, the following attributes are exported:

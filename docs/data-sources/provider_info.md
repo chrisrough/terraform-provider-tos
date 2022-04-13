@@ -2,7 +2,7 @@
 
 The `tos_providerinfo` Data Source shows basic Provider Informations.
 
-## Example Usage
+## Usage
 
 ```terraform
 data "tos_providerinfo" "providerinfo" {
@@ -12,7 +12,6 @@ data "tos_providerinfo" "providerinfo" {
 ## Argument Reference
 
 No Arguments
-
 
 ## Attribute Reference
 

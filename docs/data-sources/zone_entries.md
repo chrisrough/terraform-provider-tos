@@ -2,23 +2,21 @@
 
 The `tos_zone_entries` Data Source lists Zone Entries from Tufin ST.
 
-## Example Usage
+## Usage
 
 ```terraform
-TODO..
+data "tos_zone_entries" "zone_id" {
+  zone_id = 5660
+
+  domain = var.domain
+  app    = var.app
+}
 ```
 
 ## Argument Reference
 
 * `attribute_name` - (Optional/Required) List arguments this resource takes.
 
-
-
-
 ## Attribute Reference
 
-* `network_object_SA` - List attributes that this resource exports.
-
-### Tags
-
-- `network_object_SA` - The Network Object Name in SA
+In addition to all arguments above, the following attributes are exported:

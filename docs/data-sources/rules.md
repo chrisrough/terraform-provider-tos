@@ -2,23 +2,24 @@
 
 The `tos_rules` Data Source lists Application Connections from Tufin SA.
 
-## Example Usage
+## Usage
 
 ```terraform
-TODO..
+data "tos_rules" "rules_by_name" {
+  name = "Rule 1"
+
+  domain = var.domain
+  app    = var.app
+}
+
 ```
 
 ## Argument Reference
 
 * `attribute_name` - (Optional/Required) List arguments this resource takes.
-
-
-
+* `domain` - (Required) The Domain Name.
+* `app` - (Required) The Application Name.
 
 ## Attribute Reference
 
-* `network_object_SA` - List attributes that this resource exports.
-
-### Tags
-
-- `network_object_SA` - The Network Object Name in SA
+In addition to all arguments above, the following attributes are exported:

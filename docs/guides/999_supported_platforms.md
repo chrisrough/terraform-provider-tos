@@ -4,6 +4,7 @@ subcategory: "Versions"
 ---
 
 # Supported Platforms
+
 The provider is available on the following OS / Architectures:
 
 |   OS    | Arch  |

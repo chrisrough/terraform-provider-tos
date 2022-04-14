@@ -25,13 +25,13 @@ In addition to all arguments above, the following attributes are exported:
 
 * `id` - Application Connection Id
 * `name` - Application Connection Name
-* `src_servers`- Source Servers of the Application Connection with list of
+* `src_servers`- Source Servers of the Application Connection with list servers each containing:
     * `id` - Server Id
     * `name` - Server Name
-* `services`- Services of the Application Connection with list of
+* `services`- Services of the Application Connection with list services each containing:
     * `id` - Service Id
-    * `name` - Services Name
-* `dst_servers`- Destination Servers of the Application Connection with list of
+    * `name` - Service Name
+* `dst_servers`- Destination Servers of the Application Connection with list of servers each containing:
     * `id` - Server Id
     * `name` - Server Name
 * `comment`- Application Connection Comment

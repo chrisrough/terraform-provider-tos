@@ -11,15 +11,65 @@ data "tos_rules" "rules_by_name" {
   domain = var.domain
   app    = var.app
 }
-
 ```
 
 ## Argument Reference
 
-* `attribute_name` - (Optional/Required) List arguments this resource takes.
+* `name` - (Required) Name (Wildcard) of the Application Connections to be listed.
 * `domain` - (Required) The Domain Name.
 * `app` - (Required) The Application Name.
 
 ## Attribute Reference
 
 In addition to all arguments above, the following attributes are exported:
+
+* `id` - Application Connection Id
+* `name` - Application Connection Name
+* `src_servers`- Source Servers of the Application Connection with list of
+    * `id` - Server Id
+    * `name` - Server Name
+* `services`- Services of the Application Connection with list of
+    * `id` - Service Id
+    * `name` - Services Name
+* `dst_servers`- Destination Servers of the Application Connection with list of
+    * `id` - Server Id
+    * `name` - Server Name
+* `comment`- Application Connection Comment
+
+### Example
+
+```terraform
+rules = [
+  {
+    id          = 1690
+    name        = "Rule 1"
+    src_servers = [
+      {
+        id   = 23440
+        name = "MARS_1"
+      },
+      {
+        id   = 23441
+        name = "ASTEROIDS_1"
+      },
+    ]
+    services = [
+      {
+        id   = 83
+        name = "http"
+      },
+      {
+        id   = 85
+        name = "https"
+      },
+    ]
+    dst_servers = [
+      {
+        id   = 23442
+        name = "MILKYWAY_1"
+      },
+    ]
+    comment = "Rule 1 .."
+  }
+]
+```

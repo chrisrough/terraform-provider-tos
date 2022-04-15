@@ -21,7 +21,9 @@ data "tos_rules" "rules_by_name" {
 
 ## Attribute Reference
 
-In addition to all arguments above, the following attributes are exported:
+In addition to all arguments above, the following attributes are exported.
+
+List of matching Rules from Tufin SA:
 
 * `id` - Application Connection Id
 * `name` - Application Connection Name

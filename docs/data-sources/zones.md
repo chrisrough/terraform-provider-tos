@@ -6,7 +6,7 @@ The `tos_zones` Data Source lists Zones from Tufin ST.
 
 ```terraform
 data "tos_zones" "zones_by_name" {
-  name = "TestZoneTF2tba_tst"
+  name = "Cloud-ora-opn_dco"
 
   domain = var.domain
   app    = var.app
@@ -15,9 +15,28 @@ data "tos_zones" "zones_by_name" {
 
 ## Argument Reference
 
-* `attribute_name` - (Optional/Required) List arguments this resource takes.
+* `name` - Name (Wildcard) of the Zones to be listed.
+* `domain` - (Required) The Domain Name.
+* `app` - (Required) The Application Name.
 
 ## Attribute Reference
 
-In addition to all arguments above, the following attributes are exported:
+In addition to all arguments above, the following attributes are exported.
 
+List of matching Zones from Tufin ST each containing:
+
+* `id` - Zone Id
+* `name` - Zone Name
+* `comment` - Zone Comment
+
+### Example
+
+```terraform
+zones = [
+  {
+    id      = 5847
+    name    = "Cloud-ora-opn_dco"
+    comment = "Cloud-ora-opn_dco comment .."
+  },
+]
+```

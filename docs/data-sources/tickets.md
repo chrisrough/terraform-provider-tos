@@ -20,7 +20,9 @@ Either `subject` or `requester` must be set (or both).
 
 ## Attribute Reference
 
-In addition to all arguments above, the following attributes are exported:
+In addition to all arguments above, the following attributes are exported.
+
+List of matching Tickets from Tufin SC each containing:
 
 * `id` - Ticket Id
 * `subject` - Ticket Subject

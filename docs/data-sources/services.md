@@ -22,14 +22,14 @@ In addition to all arguments above, the following attributes are exported.
 
 List of matching Services from Tufin SA:
 
-* `id` - Service Id
-* `name` - Service Name
-* `comment` - Service Comment
-* `type` - Service Type
-* `global` - Service Global Flag
-* `min` - Min Port
-* `max` - Max Port
-* `protocol` - Protocol
+* `id` - Service Id.
+* `name` - Service Name.
+* `comment` - Service Comment.
+* `type` - Service Type.
+* `global` - Service Global Flag.
+* `min` - Min Port.
+* `max` - Max Port.
+* `protocol` - Protocol.
 
 ### Example
 

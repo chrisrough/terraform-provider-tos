@@ -29,12 +29,12 @@ In addition to all arguments above, the following attributes are exported.
 
 List of matching Zone Entries from Tufin ST each containing:
 
-* `id` - Zone Entry Id
-* `zone_id` - Zone Id
-* `ip` - Ip
-* `netmask` - Netmask
-* `prefix` - Prefix
-* `comment` - Zone Comment
+* `id` - Zone Entry Id.
+* `zone_id` - Zone Id.
+* `ip` - Ip.
+* `netmask` - Netmask.
+* `prefix` - Prefix.
+* `comment` - Zone Comment.
 
 ### Example
 

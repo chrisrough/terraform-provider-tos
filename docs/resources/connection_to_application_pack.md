@@ -2,7 +2,7 @@
 
 The `tos_application` Resource manages Connections to Application Packs in Tufin SC.
 
-## Example Usage
+## Usage
 
 ```terraform
 resource "tos_connection_to_application_pack" "connection_to_application_pack1" {
@@ -35,14 +35,13 @@ resource "tos_connection_to_application_pack" "connection_to_application_pack1" 
 
 * `domain` - (Required) The Domain Name.
 * `app` - (Required) The Application Name.
-* `tags` - (Optional) Resource Tags; see [Tags](#Tags) below for details.
+
+* `name` - (Required) The Connection to Application Pack Name.
+
+* `tags` - (Optional) Resource Tags; see [Tags](tag.md) below for details.
 
 ## Attribute Reference
 
 In addition to all arguments above, the following attributes are exported:
 
-* `id` - The ID of the created Group.
-
-### Tags
-
-- `application_SC` - The Application Name in SC
+* `id` - The Connection to Application Pack Id.

@@ -2,7 +2,7 @@
 
 The `tos_group` Resource manages Groups of Network Objects (Servers, Subnets, Ranges) in Tufin SA.
 
-## Example Usage
+## Usage
 
 ```terraform
 resource "tos_group" "group_1" {
@@ -30,14 +30,11 @@ resource "tos_group" "group_1" {
 
 * `domain` - (Required) The Domain Name.
 * `app` - (Required) The Application Name.
-* `tags` - (Optional) Resource Tags; see [Tags](#Tags) below for details.
+* `tags` - (Optional) Resource Tags; see [Tags](tag.md) below for details.
+
 
 ## Attribute Reference
 
 In addition to all arguments above, the following attributes are exported:
 
-* `id` - The ID of the created Group.
-
-### Tags
-
-- `network_object_SA` - The Network Object Name in SA
+* `id` - The Group Id.

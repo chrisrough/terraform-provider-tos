@@ -25,9 +25,9 @@ In addition to all arguments above, the following attributes are exported.
 
 List of matching Zones from Tufin ST each containing:
 
-* `id` - Zone Id
-* `name` - Zone Name
-* `comment` - Zone Comment
+* `id` - Zone Id.
+* `name` - Zone Name.
+* `comment` - Zone Comment.
 
 ### Example
 

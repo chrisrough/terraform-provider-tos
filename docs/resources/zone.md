@@ -2,7 +2,7 @@
 
 The `tos_zone` Resource manages Zones in Tufin ST.
 
-## Example Usage
+## Usage
 
 ```terraform
 TODO ..
@@ -12,6 +12,10 @@ TODO ..
 
 TODO ..
 
+* `tags` - (Optional) Resource Tags; see [Tags](tag.md) below for details.
+
 ## Attribute Reference
 
-TODO ..
+In addition to all arguments above, the following attributes are exported:
+
+* `id` - The Zone Id.

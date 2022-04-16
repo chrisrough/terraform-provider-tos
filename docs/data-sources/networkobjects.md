@@ -25,16 +25,16 @@ In addition to all arguments above, the following attributes are exported.
 
 List of matching Network Objects from Tufin SA distinguished by type each containing:
 
-* `id` - Network Object Id
-* `name` - Network Object Name
-* `type`- Network Object Type; Types are
+* `id` - Network Object Id.
+* `name` - Network Object Name.
+* `type`- Network Object Type; Types are:
     * `host`
     * `range`
     * `subnet`
     * `group`
-* `ip`- Network Object Ip (not set for type `group`)
-* `members`- Network Object Members (only set for type `group`)
-* `comment`- Application Viewers
+* `ip`- Network Object Ip (not set for type `group`).
+* `members`- Network Object Members (only set for type `group`).
+* `comment`- Application Viewers.
 
 ### Example Type `host`
 

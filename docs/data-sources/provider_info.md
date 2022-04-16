@@ -17,15 +17,15 @@ No Arguments
 
 The following attributes are exported:
 
-* `Mode` - Provider Mode
-* `TBA Url` - Tufin Backend API (TBA) URL
-* `TBA User` - Tufin Backend API (TBA) User
-* `TOS SC Url` - Turfin Orchestration Suite (TOS) Secure Change (SC) URL
-* `TOS SC User` - Turfin Orchestration Suite (TOS) Secure Change (SC) User
-* `TOS ST Url` - Turfin Orchestration Suite (TOS) Secure Change (ST) URL
-* `TOS SC User` - Turfin Orchestration Suite (TOS) Secure Change (ST) User
-* `Title` - Provider Title
-* `Version` - Provider Version
+* `Mode` - Provider Mode.
+* `TBA Url` - Tufin Backend API (TBA) URL.
+* `TBA User` - Tufin Backend API (TBA) User.
+* `TOS SC Url` - Turfin Orchestration Suite (TOS) Secure Change (SC) URL.
+* `TOS SC User` - Turfin Orchestration Suite (TOS) Secure Change (SC) User.
+* `TOS ST Url` - Turfin Orchestration Suite (TOS) Secure Change (ST) URL.
+* `TOS SC User` - Turfin Orchestration Suite (TOS) Secure Change (ST) User.
+* `Title` - Provider Title.
+* `Version` - Provider Version.
 
 ### Example Mode `tba`
 

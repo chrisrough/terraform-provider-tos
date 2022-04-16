@@ -30,18 +30,18 @@ In addition to all arguments above, the following attributes are exported.
 
 List of matching Application Packs from Tufin SC each containing:
 
-* `id` - Application Pack Id
-* `name` - Application Pack Name
-* `comment`- Application Pack Comment
-* `tags` - List of Application Pack Tag Names
+* `id` - Application Pack Id.
+* `name` - Application Pack Name.
+* `comment`- Application Pack Comment.
+* `tags` - List of Application Pack Tag Names.
 
 ### Example
 
 ```terraform
 application_packs = [
   {
-    comment = ""
     id      = 367
+    comment = "Tag Comment .."
     name    = "AppPack gshs IS-Service-Incoming"
     tags    = [
       "default",

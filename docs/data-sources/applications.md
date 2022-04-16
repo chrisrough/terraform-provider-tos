@@ -20,13 +20,13 @@ In addition to all arguments above, the following attributes are exported.
 
 List of matching Applications from Tufin SC each containing:
 
-* `id` - Application Id
-* `name` - Application Name
-* `comment`- Application Comment
-* `customer`- Application Customer
-* `owner`- Application Owner
-* `editors`- Application Editors
-* `viewers`- Application Viewers
+* `id` - Application Id.
+* `name` - Application Name.
+* `comment`- Application Comment.
+* `customer`- Application Customer.
+* `owner`- Application Owner.
+* `editors`- Application Editors.
+* `viewers`- Application Viewers.
 
 ### Example
 

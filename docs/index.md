@@ -9,9 +9,13 @@ Visit [Tufin](https://tufin.com) for more information on TOS.
 
 ### Data Sources
 
-[tos_networkobjects](data-sources/networkobjects.md)
+[tos_application_packs](data-sources/application_packs.md)
 
 [tos_applications](data-sources/applications.md)
+
+[tos_networkobjects](data-sources/networkobjects.md)
+
+[tos_providerinfo](data-sources/provider_info.md)
 
 [tos_rules](data-sources/rules.md)
 
@@ -22,6 +26,7 @@ Visit [Tufin](https://tufin.com) for more information on TOS.
 [tos_zones](data-sources/zones.md)
 
 [tos_zone_entries](data-sources/zone_entries.md)
+
 
 ### Resources
 

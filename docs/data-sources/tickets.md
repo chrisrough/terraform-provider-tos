@@ -24,15 +24,15 @@ In addition to all arguments above, the following attributes are exported.
 
 List of matching Tickets from Tufin SC each containing:
 
-* `id` - Ticket Id
-* `subject` - Ticket Subject
-* `requester` - Ticket Requester
-* `priority` - Ticket Priority
-* `status` - Ticket Status
-* `workflow_name` - Ticket Workflow Name
-* `date_created` - Ticket Date Created
-* `date_last_update` - Ticket Date Last Updated
-* `date_closed` - Ticket Date Closed
+* `id` - Ticket Id.
+* `subject` - Ticket Subject.
+* `requester` - Ticket Requester.
+* `priority` - Ticket Priority.
+* `status` - Ticket Status.
+* `workflow_name` - Ticket Workflow Name.
+* `date_created` - Ticket Date Created.
+* `date_last_update` - Ticket Date Last Updated.
+* `date_closed` - Ticket Date Closed.
 
 ### Example
 

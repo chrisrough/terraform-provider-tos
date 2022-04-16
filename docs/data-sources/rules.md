@@ -25,18 +25,18 @@ In addition to all arguments above, the following attributes are exported.
 
 List of matching Rules from Tufin SA:
 
-* `id` - Application Connection Id
-* `name` - Application Connection Name
+* `id` - Application Connection Id.
+* `name` - Application Connection Name.
 * `src_servers`- Source Servers of the Application Connection with list servers each containing:
-    * `id` - Server Id
-    * `name` - Server Name
+    * `id` - Server Id.
+    * `name` - Server Name.
 * `services`- Services of the Application Connection with list services each containing:
-    * `id` - Service Id
-    * `name` - Service Name
+    * `id` - Service Id.
+    * `name` - Service Name.
 * `dst_servers`- Destination Servers of the Application Connection with list of servers each containing:
-    * `id` - Server Id
-    * `name` - Server Name
-* `comment`- Application Connection Comment
+    * `id` - Server Id.
+    * `name` - Server Name.
+* `comment`- Application Connection Comment.
 
 ### Example
 

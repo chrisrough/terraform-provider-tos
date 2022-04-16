@@ -2,35 +2,34 @@
 
 The `tos_range` Resource manages Range Network Objects in Tufin SA.
 
-## Example Usage
+## Usage
 
 ```terraform
 resource "tos_range" "pluto_1" {
   domain = var.domain
   app    = var.app
 
-  name           = "PLUTO_1"
-  group_id       = 1
-  first_ip       = "1.2.3.1"
-  last_ip        = "1.2.3.4"
-  comment        = "Test Range PLUTO 1 .. Created by Tufin Terraform Provider"
-  tags = merge(
-  var.default_tags,
-  {
-    network_object_SA = format("%s", "PLUTO_1")
-  })
+  name     = "PLUTO_1"
+  group_id = 1
+  first_ip = "1.2.3.1"
+  last_ip  = "1.2.3.4"
+  comment  = "Test Range PLUTO 1 .. Created by Tufin Terraform Provider"
+  tags     = merge(
+    var.default_tags,
+    {
+      network_object_SA = format("%s", "PLUTO_1")
+    })
 }
 ```
 
 ## Argument Reference
 
 * `attribute_name` - (Optional/Required) List arguments this resource takes.
-* `tags` - (Optional) Resource Tags; see [Tags](#Tags) below for details.
+* `tags` - (Optional) Resource Tags; see [Tags](tag.md) below for details.
 
 ## Attribute Reference
 
-* `network_object_SA` - List attributes that this resource exports.
+In addition to all arguments above, the following attributes are exported:
 
-### Tags
+* `id` - The Range Id.
 
-- `network_object_SA` - The Network Object Name in SA

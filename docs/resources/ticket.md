@@ -2,7 +2,7 @@
 
 The `tos_ticket` Resource manages Tickets in Tufin SA.
 
-## Example Usage
+## Usage
 
 ```terraform
 resource "tos_ticket" "tix_1" {
@@ -22,12 +22,11 @@ resource "tos_ticket" "tix_1" {
 ## Argument Reference
 
 * `attribute_name` - (Optional/Required) List arguments this resource takes.
-* `tags` - (Optional) Resource Tags; see [Tags](#Tags) below for details.
+* `tags` - (Optional) Resource Tags; see [Tags](tag.md) below for details.
+
 
 ## Attribute Reference
 
-* `network_object_SA` - List attributes that this resource exports.
+In addition to all arguments above, the following attributes are exported:
 
-### Tags
-
-- `network_object_SA` - The Network Object Name in SA
+* `id` - The Ticket Id.

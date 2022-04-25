@@ -29,17 +29,19 @@ Visit [Tufin](https://tufin.com) for more information on TOS.
 
 ### Resources
 
-[tos_server](resources/server.md)
+[tos_application](resources/application.md)
 
-[tos_subnet](resources/subnet.md)
-
-[tos_range](resources/range.md)
+[tos_connection_to_application_pack](resources/connection_to_application_pack.md)
 
 [tos_group](resources/group.md)
 
-[tos_application](resources/application.md)
+[tos_range](resources/range.md)
 
 [tos_rule](resources/rule.md)
+
+[tos_server](resources/server.md)
+
+[tos_subnet](resources/subnet.md)
 
 [tos_ticket](resources/ticket.md)
 

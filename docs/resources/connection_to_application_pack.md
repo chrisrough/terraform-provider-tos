@@ -38,7 +38,7 @@ resource "tos_connection_to_application_pack" "connection_to_application_pack1" 
 
 * `name` - (Required) The Connection to Application Pack Name.
 
-* `tags` - (Optional) Resource Tags; see [Tags](tag.md) below for details.
+* `tags` - (Optional) Resource Tags; see [Tags](tag.md) for details.
 
 ## Attribute Reference
 

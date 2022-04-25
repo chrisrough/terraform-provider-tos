@@ -32,12 +32,42 @@ resource "tos_application" "application_1" {
 
 * `domain` - (Required) The Domain Name.
 * `name` - (Required) The Application Name.
-* `tags` - (Optional) Resource Tags; see [Tags](tag.md) below for details.
-
-
+* `comment` - (Required) The Application Comment.
+* `owner` - (Required) The Application Owner.
+* `editors` - (Required) The Application Editors.
+* `viewers` - (Required) The Application Viewer.
+* `tags` - (Optional) Resource Tags; see [Tags](tag.md) for details.
 
 ## Attribute Reference
 
 In addition to all arguments above, the following attributes are exported:
 
 * `id` - The Application Id.
+* `domain` - The Application Domain (Customer).
+
+### Example
+
+```terraform
+resource "tos_application" "application_1" {
+  id      = "1114"
+  domain  = "scs0"
+  name    = "TestApp2"
+  comment = "Test App 2 .."
+  owner   = "taaroch0"
+  editors = [
+    "taacued2",
+    "taaroch0",
+  ]
+  viewers = [
+    "tsgrure1",
+  ]
+  tags = {
+    "application_SC" = "Test App 2"
+    "description"    = "Terraform Provider TOS Showcase Applications"
+    "env"            = "Tufin@Swisscom"
+    "origin"         = "provider-tufin-tba"
+    "project"        = "Terraform Provider TOS"
+    "version"        = "1.0.0"
+  }
+}
+```

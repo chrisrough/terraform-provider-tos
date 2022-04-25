@@ -12,7 +12,7 @@ TODO ..
 
 TODO ..
 
-* `tags` - (Optional) Resource Tags; see [Tags](tag.md) below for details.
+* `tags` - (Optional) Resource Tags; see [Tags](tag.md) for details.
 
 ## Attribute Reference
 

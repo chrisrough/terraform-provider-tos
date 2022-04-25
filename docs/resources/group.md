@@ -32,9 +32,13 @@ resource "tos_group" "group_1" {
 * `app` - (Required) The Application Name.
 * `tags` - (Optional) Resource Tags; see [Tags](tag.md) for details.
 
-
 ## Attribute Reference
 
 In addition to all arguments above, the following attributes are exported:
 
 * `id` - The Group Id.
+
+### Example
+
+```terraform
+```

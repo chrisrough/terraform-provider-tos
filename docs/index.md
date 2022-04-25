@@ -27,7 +27,6 @@ Visit [Tufin](https://tufin.com) for more information on TOS.
 
 [tos_zone_entries](data-sources/zone_entries.md)
 
-
 ### Resources
 
 [tos_server](resources/server.md)

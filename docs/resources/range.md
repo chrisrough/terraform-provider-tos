@@ -33,3 +33,7 @@ In addition to all arguments above, the following attributes are exported:
 
 * `id` - The Range Id.
 
+### Example
+
+```terraform
+```

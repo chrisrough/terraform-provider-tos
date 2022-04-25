@@ -35,8 +35,8 @@ resource "tos_connection_to_application_pack" "connection_to_application_pack1" 
 
 * `domain` - (Required) The Domain Name.
 * `app` - (Required) The Application Name.
-
 * `name` - (Required) The Connection to Application Pack Name.
+* `comment` - (Required) The Connection to Application Pack Comment.
 
 * `tags` - (Optional) Resource Tags; see [Tags](tag.md) for details.
 
@@ -45,3 +45,8 @@ resource "tos_connection_to_application_pack" "connection_to_application_pack1" 
 In addition to all arguments above, the following attributes are exported:
 
 * `id` - The Connection to Application Pack Id.
+
+### Example
+
+```terraform
+```

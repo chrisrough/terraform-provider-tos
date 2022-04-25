@@ -19,3 +19,8 @@ TODO ..
 In addition to all arguments above, the following attributes are exported:
 
 * `id` - The Zone Entry Id.
+
+### Example
+
+```terraform
+```

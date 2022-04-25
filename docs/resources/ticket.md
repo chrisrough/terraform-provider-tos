@@ -11,7 +11,7 @@ resource "tos_ticket" "tix_1" {
 
   subject = "test ticket 1"
 
-  tags    = merge(
+  tags = merge(
     var.default_tags,
     {
       ticket_SA = format("%s", "test ticket 1")
@@ -24,9 +24,13 @@ resource "tos_ticket" "tix_1" {
 * `attribute_name` - (Optional/Required) List arguments this resource takes.
 * `tags` - (Optional) Resource Tags; see [Tags](tag.md) for details.
 
-
 ## Attribute Reference
 
 In addition to all arguments above, the following attributes are exported:
 
 * `id` - The Ticket Id.
+
+### Example
+
+```terraform
+```

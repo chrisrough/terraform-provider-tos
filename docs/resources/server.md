@@ -31,3 +31,8 @@ resource "tos_server" "pluto_1" {
 In addition to all arguments above, the following attributes are exported:
 
 * `id` - The Server Id.
+
+### Example
+
+```terraform
+```

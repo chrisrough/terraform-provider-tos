@@ -9,19 +9,6 @@ subcategory: "Versions"
 
 Coming soon!
 
-## v1.0.9
-
-Fully functional with the following limiations:
-
-* Mode tos
-    * Datasource tos_rules not implemented yet.
-    * Resource tos_rule not implemented yet.
-
-* Mode tba
-    * Datasource tos_rules not implemented yet.
-    * Resources not implemented yet
-        * tos_rule
-        * tos_service
 
 # Release Candidates
 

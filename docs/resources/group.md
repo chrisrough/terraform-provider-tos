@@ -13,9 +13,10 @@ resource "tos_group" "group_1" {
   comment = "GROUP 1 .."
 
   members = [
+    "ASTEROIDS_1",
     "MARS_1",
-    "MARS_2",
-    "MARS_3",
+    "MILKYWAY_1",
+    "PLUTO_1",
   ]
 
   tags = merge(
@@ -30,6 +31,9 @@ resource "tos_group" "group_1" {
 
 * `domain` - (Required) The Domain Name.
 * `app` - (Required) The Application Name.
+* `name` - (Required) The Group Name.
+* `comment` - (Required) The Group Comment.
+* `members` - (Required) The Group Members.
 * `tags` - (Optional) Resource Tags; see [Tags](tag.md) for details.
 
 ## Attribute Reference
@@ -41,4 +45,25 @@ In addition to all arguments above, the following attributes are exported:
 ### Example
 
 ```terraform
+resource "tos_group" "group_1" {
+  id      = "23586"
+  domain  = "scs0"
+  app     = "Cloud"
+  name    = "GROUP_1"
+  comment = "GROUP 1 .."
+  members = [
+    "ASTEROIDS_1",
+    "MARS_1",
+    "MILKYWAY_1",
+    "PLUTO_1",
+  ]
+  tags = {
+    "description"       = "Terraform Provider TOS Showcase Network Objects"
+    "env"               = "Tufin@Swisscom"
+    "network_object_SA" = "GROUP_1"
+    "origin"            = "provider-tufin-tba"
+    "project"           = "Terraform Provider TOS"
+    "version"           = "1.0.0"
+  }
+}
 ```

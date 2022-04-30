@@ -46,7 +46,7 @@ resource "tos_ticket" "tix_1" {
   workflow = "Default"
 
   tags = {
-    "description" = "Terraform Provider TOS Showcase Network Objects"
+    "description" = "Terraform Provider TOS Showcase Tickets"
     "env"         = "Tufin@Swisscom"
     "ticket_SA"   = "Test Ticket 1"
     "origin"      = "provider-tufin-tba"

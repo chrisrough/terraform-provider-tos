@@ -5,25 +5,28 @@ The `tos_subnet` Resource manages Subnet Network Objects in Tufin SA.
 ## Usage
 
 ```terraform
-resource "tos_subnet" "pluto_1" {
+resource "tos_subnet" "milkyway" {
   domain = var.domain
   app    = var.app
 
-  name     = "PLUTO_1"
-  group_id = 1
-  ip       = "4.3.2.0/29"
-  comment  = "Test Subnet PLUTO 1 .. Created by Tufin Terraform Provider"
-  tags     = merge(
+  name    = "MILKYWAY_1"
+  ip      = "1.2.3.0/28"
+  comment = "Test Subnet MILKYWAY 1 .. Created by Terraform Provider TOS (tba)"
+  tags    = merge(
     var.default_tags,
     {
-      network_object_SA = format("%s", "PLUTO_1")
+      network_object_SA = format("%s", "MILKYWAY_1")
     })
 }
 ```
 
 ## Argument Reference
 
-* `attribute_name` - (Optional/Required) List arguments this resource takes.
+* `domain` - (Required) The Domain Name.
+* `app` - (Required) The Application Name.
+* `name` - (Required) The Subnet Name.
+* `ip` - (Required) The Subnet CIDR.
+* `comment` - (Required) The Range Comment.
 * `tags` - (Optional) Resource Tags; see [Tags](tag.md) for details.
 
 ## Attribute Reference
@@ -35,4 +38,20 @@ In addition to all arguments above, the following attributes are exported:
 ### Example
 
 ```terraform
+resource "tos_subnet" "milkyway" {
+  app     = "Cloud"
+  comment = "Test Subnet MILKYWAY 1 .. Created by Terraform Provider TOS (tba)"
+  domain  = "scs0"
+  id      = "23583"
+  ip      = "1.2.3.0/28"
+  name    = "MILKYWAY_1"
+  tags    = {
+    "description"       = "Terraform Provider TOS Showcase Network Objects"
+    "env"               = "Tufin@Swisscom"
+    "network_object_SA" = "MILKYWAY_1"
+    "origin"            = "provider-tufin-tba"
+    "project"           = "Terraform Provider TOS"
+    "version"           = "1.0.0"
+  }
+}
 ```

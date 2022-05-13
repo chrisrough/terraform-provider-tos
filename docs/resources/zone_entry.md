@@ -7,7 +7,6 @@ The `tos_zone_entry` Resource manages Zone Entries in Tufin ST.
 ```terraform
 resource "tos_zone_entry" "zone_entry_1" {
   domain = var.domain
-  app    = var.app
 
   zone_id = tos_zone.zone_3.id
   ip      = "10.217.127.192/29"
@@ -24,7 +23,6 @@ resource "tos_zone_entry" "zone_entry_1" {
 ## Argument Reference
 
 * `domain` - (Required) The Domain Name.
-* `app` - (Required) The Application Name.
 * `zone_id` - (Required) The Zone Id.
 * `ip` - (Required) The Zone Entry Ip.
 * `comment` - (Required) The Range Comment.
@@ -41,9 +39,8 @@ In addition to all arguments above, the following attributes are exported:
 ```terraform
 resource "tos_zone_entry" "zone_entry_1" {
   id      = "181827"
-  app     = "Cloud"
-  comment = "Test Zone Entry 1 .. Created by Terraform Provider TOS (tba)"
   domain  = "scs0"
+  comment = "Test Zone Entry 1 .. Created by Terraform Provider TOS (tba)"
   ip      = "10.217.127.192/29"
   tags    = {
     "description" = "Terraform Provider TOS Showcase Zones+Zone Entries"

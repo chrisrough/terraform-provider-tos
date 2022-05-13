@@ -19,13 +19,8 @@ terraform {
 }
 
 provider "tos" {
-  sc_url    = "<sc url>"
-  sc_user   = "<sc user>"
-  sc_passwd = "<sc passwd>"
-
-  st_url    = "<sc url>"
-  st_user   = "<sc user>"
-  st_passwd = "<sc passwd>"
+  sc_url = "<sc url>"
+  st_url = "<sc url>"
 }
 ```
 
@@ -42,11 +37,8 @@ terraform {
 }
 
 provider "tos" {
-  tba_url    = "<tba url>"
-  tba_user   = "<tba user>"
-  tba_passwd = "<tba password>"
-
-  mode = "tba"
+  tba_url = "<tba url>"
+  mode    = "tba"
 }
 ```
 

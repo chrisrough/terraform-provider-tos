@@ -10,7 +10,6 @@ data "tos_zone_entries" "zone_id" {
   zone_name = "Cloud-ora-opn_dco"
 
   domain = var.domain
-  app    = var.app
 }
 ```
 
@@ -19,7 +18,6 @@ data "tos_zone_entries" "zone_id" {
 * `id` - Id of the Zone for which the Zone Entries to be listed.
 * `name` - Name of the Zone for which the Zone Entries to be listed.
 * `domain` - (Required) The Domain Name.
-* `app` - (Required) The Application Name.
 
 Either `id` or `name` must be set (id has precedence over name if both are specified).
 

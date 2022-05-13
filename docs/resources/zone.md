@@ -7,7 +7,6 @@ The `tos_zone` Resource manages Zones in Tufin ST.
 ```terraform
 resource "tos_zone" "zone_1" {
   domain = var.domain
-  app    = var.app
 
   name    = "TestZoneTF1tba"
   comment = "Test Zone TF 1 .. Created by Terraform Provider TOS (tba)"
@@ -23,7 +22,6 @@ resource "tos_zone" "zone_1" {
 ## Argument Reference
 
 * `domain` - (Required) The Domain Name.
-* `app` - (Required) The Application Name.
 * `name` - (Required) The Range Name.
 * `comment` - (Required) The Range Comment.
 * `tags` - (Optional) Resource Tags; see [Tags](tag.md) for details.
@@ -39,9 +37,8 @@ In addition to all arguments above, the following attributes are exported:
 ```terraform
 resource "tos_zone" "zone_1" {
   id      = "5866"
-  app     = "Cloud"
-  comment = "Test Zone TF 1 .. Created by Terraform Provider TOS (tba)"
   domain  = "scs0"
+  comment = "Test Zone TF 1 .. Created by Terraform Provider TOS (tba)"
   name    = "TestZoneTF1tba"
   tags    = {
     "description" = "Terraform Provider TOS Showcase Zones+Zone Entries"

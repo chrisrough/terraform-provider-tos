@@ -9,7 +9,6 @@ data "tos_zones" "zones_by_name" {
   name = "Cloud-ora-opn_dco"
 
   domain = var.domain
-  app    = var.app
 }
 ```
 
@@ -17,7 +16,6 @@ data "tos_zones" "zones_by_name" {
 
 * `name` - Name (Wildcard) of the Zones to be listed.
 * `domain` - (Required) The Domain Name.
-* `app` - (Required) The Application Name.
 
 ## Attribute Reference
 

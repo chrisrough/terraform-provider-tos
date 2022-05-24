@@ -9,7 +9,7 @@ resource "tos_zone" "zone_1" {
   domain = var.domain
 
   name    = "TestZoneTF1tba"
-  comment = "Test Zone TF 1 .. Created by Terraform Provider TOS (tba)"
+  comment = "Test Zone TF 1 .. Created by Terraform Provider TOS"
 
   tags = merge(
     var.default_tags,
@@ -38,11 +38,11 @@ In addition to all arguments above, the following attributes are exported:
 resource "tos_zone" "zone_1" {
   id      = "5866"
   domain  = "scs0"
-  comment = "Test Zone TF 1 .. Created by Terraform Provider TOS (tba)"
+  comment = "Test Zone TF 1 .. Created by Terraform Provider TOS"
   name    = "TestZoneTF1tba"
   tags    = {
     "description" = "Terraform Provider TOS Showcase Zones+Zone Entries"
-    "env"         = "Tufin@Swisscom"
+    "env"         = "Tufin@me"
     "name_ST"     = "TestZoneTF1tba"
     "origin"      = "provider-tufin-tba"
     "project"     = "Terraform Provider TOS"

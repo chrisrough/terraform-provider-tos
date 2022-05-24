@@ -11,7 +11,7 @@ resource "tos_server" "mars" {
 
   name    = "MARS_1"
   ip      = "1.2.3.4/32"
-  comment = "Test Server MARS 1 .. Created by Terraform Provider TOS (tba)"
+  comment = "Test Server MARS 1 .. Created by Terraform Provider TOS"
 
   tags = merge(
     var.default_tags,
@@ -41,14 +41,14 @@ In addition to all arguments above, the following attributes are exported:
 ```terraform
 resource "tos_server" "mars" {
   app     = "Cloud"
-  comment = "Test Server MARS 1 .. Created by Terraform Provider TOS (tba)"
+  comment = "Test Server MARS 1 .. Created by Terraform Provider TOS"
   domain  = "scs0"
   id      = "23582"
   ip      = "1.2.3.4/32"
   name    = "MARS_1"
   tags    = {
     "description"       = "Terraform Provider TOS Showcase Network Objects"
-    "env"               = "Tufin@Swisscom"
+    "env"               = "Tufin@me"
     "network_object_SA" = "MARS_1"
     "origin"            = "provider-tufin-tba"
     "project"           = "Terraform Provider TOS"

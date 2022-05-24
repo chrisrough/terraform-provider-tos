@@ -70,7 +70,7 @@ resource "tos_connection_to_application_pack" "connection_to_application_pack1" 
   tags = {
     "connection_to_application_pack_SA" = "PACK_2022_04_25_173500"
     "description"                       = "Terraform Provider TOS Showcase Connection to Application Packs"
-    "env"                               = "Tufin@Swisscom"
+    "env"                               = "Tufin@me"
     "origin"                            = "provider-tufin-tba"
     "project"                           = "Terraform Provider TOS"
     "version"                           = "1.0.0"

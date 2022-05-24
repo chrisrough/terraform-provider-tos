@@ -59,7 +59,7 @@ resource "tos_group" "group_1" {
   ]
   tags = {
     "description"       = "Terraform Provider TOS Showcase Network Objects"
-    "env"               = "Tufin@Swisscom"
+    "env"               = "Tufin@me"
     "network_object_SA" = "GROUP_1"
     "origin"            = "provider-tufin-tba"
     "project"           = "Terraform Provider TOS"

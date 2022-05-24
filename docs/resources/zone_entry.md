@@ -8,9 +8,13 @@ The `tos_zone_entry` Resource manages Zone Entries in Tufin ST.
 resource "tos_zone_entry" "zone_entry_1" {
   domain = var.domain
 
-  zone_id = tos_zone.zone_3.id
-  ip      = "10.217.127.192/29"
-  comment = "Test Zone Entry 1 .. Created by Terraform Provider TOS (tba)"
+  zone_id           = tos_zone.zone_3.id
+  ip                = "10.217.127.192/29"
+  connected_domains = [
+    "domain1",
+    "domain2",
+  ]
+  comment = "Test Zone Entry 1 .. Created by Terraform Provider TOS"
 
   tags = merge(
     var.default_tags,
@@ -25,6 +29,7 @@ resource "tos_zone_entry" "zone_entry_1" {
 * `domain` - (Required) The Domain Name.
 * `zone_id` - (Required) The Zone Id.
 * `ip` - (Required) The Zone Entry Ip.
+* `connected_domains` - (Optional) The Connected Domains related to this Zone Entry; only valid in Mode 'tba'.
 * `comment` - (Required) The Range Comment.
 * `tags` - (Optional) Resource Tags; see [Tags](tag.md) for details.
 
@@ -40,11 +45,11 @@ In addition to all arguments above, the following attributes are exported:
 resource "tos_zone_entry" "zone_entry_1" {
   id      = "181827"
   domain  = "scs0"
-  comment = "Test Zone Entry 1 .. Created by Terraform Provider TOS (tba)"
+  comment = "Test Zone Entry 1 .. Created by Terraform Provider TOS"
   ip      = "10.217.127.192/29"
   tags    = {
     "description" = "Terraform Provider TOS Showcase Zones+Zone Entries"
-    "env"         = "Tufin@Swisscom"
+    "env"         = "Tufin@me"
     "name_ST"     = "Test Zone Entry 1"
     "origin"      = "provider-tufin-tba"
     "project"     = "Terraform Provider TOS"

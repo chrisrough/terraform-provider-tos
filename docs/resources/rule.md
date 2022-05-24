@@ -75,7 +75,7 @@ resource "tos_rule" "rule1" {
   ]
   tags = {
     "description" = "Terraform Provider TOS Showcase Network Objects"
-    "env"         = "Tufin@Swisscom"
+    "env"         = "Tufin@me"
     "origin"      = "provider-tufin-tba"
     "project"     = "Terraform Provider TOS"
     "rule_SA"     = "Rule 1"

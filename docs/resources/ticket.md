@@ -47,7 +47,7 @@ resource "tos_ticket" "tix_1" {
 
   tags = {
     "description" = "Terraform Provider TOS Showcase Tickets"
-    "env"         = "Tufin@Swisscom"
+    "env"         = "Tufin@me"
     "ticket_SA"   = "Test Ticket 1"
     "origin"      = "provider-tufin-tba"
     "project"     = "Terraform Provider TOS"

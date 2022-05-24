@@ -11,7 +11,7 @@ resource "tos_subnet" "milkyway" {
 
   name    = "MILKYWAY_1"
   ip      = "1.2.3.0/28"
-  comment = "Test Subnet MILKYWAY 1 .. Created by Terraform Provider TOS (tba)"
+  comment = "Test Subnet MILKYWAY 1 .. Created by Terraform Provider TOS"
   tags    = merge(
     var.default_tags,
     {
@@ -40,14 +40,14 @@ In addition to all arguments above, the following attributes are exported:
 ```terraform
 resource "tos_subnet" "milkyway" {
   app     = "Cloud"
-  comment = "Test Subnet MILKYWAY 1 .. Created by Terraform Provider TOS (tba)"
+  comment = "Test Subnet MILKYWAY 1 .. Created by Terraform Provider TOS"
   domain  = "scs0"
   id      = "23583"
   ip      = "1.2.3.0/28"
   name    = "MILKYWAY_1"
   tags    = {
     "description"       = "Terraform Provider TOS Showcase Network Objects"
-    "env"               = "Tufin@Swisscom"
+    "env"               = "Tufin@me"
     "network_object_SA" = "MILKYWAY_1"
     "origin"            = "provider-tufin-tba"
     "project"           = "Terraform Provider TOS"

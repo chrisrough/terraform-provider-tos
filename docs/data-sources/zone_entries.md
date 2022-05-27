@@ -15,11 +15,11 @@ data "tos_zone_entries" "zone_id" {
 
 ## Argument Reference
 
-* `id` - Id of the Zone for which the Zone Entries to be listed.
-* `name` - Name of the Zone for which the Zone Entries to be listed.
+* `zone_id` - Id of the Zone for which the Zone Entries to be listed.
+* `zone_name` - Name of the Zone for which the Zone Entries to be listed.
 * `domain` - (Required) The Domain Name.
 
-Either `id` or `name` must be set (id has precedence over name if both are specified).
+Either `zone_id` or `zone_name` must be set (but not both).
 
 ## Attribute Reference
 

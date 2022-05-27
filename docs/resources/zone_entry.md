@@ -8,7 +8,9 @@ The `tos_zone_entry` Resource manages Zone Entries in Tufin ST.
 resource "tos_zone_entry" "zone_entry_1" {
   domain = var.domain
 
-  zone_id           = tos_zone.zone_3.id
+  zone_id   = tos_zone.zone_3.id
+  zone_name = tos_zone.zone_3.name
+
   ip                = "10.217.127.192/29"
   connected_domains = [
     "domain1",
@@ -28,10 +30,13 @@ resource "tos_zone_entry" "zone_entry_1" {
 
 * `domain` - (Required) The Domain Name.
 * `zone_id` - (Required) The Zone Id.
+* `zone_name` - (Required) The Zone Name.
 * `ip` - (Required) The Zone Entry Ip.
 * `connected_domains` - (Optional) The Connected Domains related to this Zone Entry; only valid in Mode 'tba'.
 * `comment` - (Required) The Range Comment.
 * `tags` - (Optional) Resource Tags; see [Tags](tag.md) for details.
+
+Either `zone_id` or `zone_name` must be set (but not both).
 
 ## Attribute Reference
 

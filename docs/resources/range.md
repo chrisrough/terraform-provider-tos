@@ -58,3 +58,14 @@ resource "tos_range" "asteroids" {
   }
 }
 ```
+
+
+## Import
+
+The `tos_range` Resources are imported using the identifier `id,domain,app`.
+
+### Example
+
+```terraform
+terraform import module.networkobjects.tos_range.range_1 19147,scs0,Cloud
+```

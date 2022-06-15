@@ -71,3 +71,14 @@ resource "tos_application" "application_1" {
   }
 }
 ```
+
+
+## Import
+
+The `tos_application` Resources are imported using the identifier `id`.
+
+### Example
+
+```terraform
+terraform import module.applications.tos_application.application_import 774
+```

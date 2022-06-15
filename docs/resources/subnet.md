@@ -55,3 +55,14 @@ resource "tos_subnet" "milkyway" {
   }
 }
 ```
+
+
+## Import
+
+The `tos_subnet` Resources are imported using the identifier `id,domain,app`.
+
+### Example
+
+```terraform
+terraform import module.networkobjects.tos_subnet.subnet_1 19147,scs0,Cloud
+```

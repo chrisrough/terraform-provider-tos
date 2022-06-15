@@ -50,3 +50,13 @@ resource "tos_zone" "zone_1" {
   }
 }
 ```
+
+## Import
+
+The `tos_zone` Resources are imported using the identifier `id,domain`.
+
+### Example
+
+```terraform
+terraform import module.zones.tos_zone.zone_import 3946,scs0
+```

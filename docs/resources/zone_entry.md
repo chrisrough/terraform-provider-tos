@@ -63,3 +63,15 @@ resource "tos_zone_entry" "zone_entry_1" {
   zone_id = 5865
 }
 ```
+
+## Import
+
+The `tos_zone_entry` Resources are imported using the identifier `*|id,zoneId,domain`.
+When `*` is specified as id (denoting the Zone Entry Id), all Zone Entries of the Zone are imported.
+
+### Example
+
+```terraform
+terraform import module.zones.tos_zone_entry.zone_entry_import 176657,3946,scs0
+terraform import module.zones.tos_zone_entry.zone_entry_import *,3946,scs0
+```

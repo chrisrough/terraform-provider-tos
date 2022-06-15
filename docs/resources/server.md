@@ -56,3 +56,13 @@ resource "tos_server" "mars" {
   }
 }
 ```
+
+## Import
+
+The `tos_server` Resources are imported using the identifier `id,domain,app`.
+
+### Example
+
+```terraform
+terraform import module.networkobjects.tos_server.server_1 19147,scs0,Cloud
+```

@@ -83,3 +83,14 @@ resource "tos_rule" "rule1" {
   }
 }
 ```
+
+
+## Import
+
+The `tos_rule` Resources are imported using the identifier `id,domain,app`.
+
+### Example
+
+```terraform
+terraform import module.networkobjects.tos_rule.rule_1 19147,scs0,Cloud
+```

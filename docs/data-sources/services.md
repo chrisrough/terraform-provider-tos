@@ -12,9 +12,7 @@ data "tos_services" "services_by_name" {
 
 ## Argument Reference
 
-* `name` - Name (Wildcard) of the Service to be listed.
-* `domain` - (Required) The Domain Name.
-* `app` - (Required) The Application Name.
+* `name` - Name (Wildcard) of the Services to be listed.
 
 ## Attribute Reference
 

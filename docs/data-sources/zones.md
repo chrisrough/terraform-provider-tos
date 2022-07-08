@@ -14,7 +14,7 @@ data "tos_zones" "zones_by_name" {
 
 ## Argument Reference
 
-* `name` - Name (Wildcard) of the Zones to be listed.
+* `name` - Name of the Zones to be listed (by matching string).
 * `domain` - (Required) The Domain Name.
 
 ## Attribute Reference

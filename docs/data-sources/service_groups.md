@@ -1,6 +1,6 @@
 # Data Source `tos_service_groups`
 
-The `tos_service_groups` Data Source lists Application Service Groups from Tufin SA.
+The `tos_service_groups` Data Source lists Global Service Groups from Tufin SA.
 
 ## Usage
 
@@ -12,7 +12,7 @@ data "tos_service_groups" "service_groups_by_name" {
 
 ## Argument Reference
 
-* `name` - Name (Wildcard) of the Service Groups to be listed.
+* `name` - Name (Wildcard) of the Global Service Groups to be listed.
 
 ## Attribute Reference
 
@@ -22,10 +22,10 @@ List of matching Service Groups from Tufin SA:
 
 * `id` - Service Id.
 * `name` - Service Name.
-* `comment` - Service Comment.
-* `type` - Service Type.
 * `global` - Service Global Flag.
+* `type` - Service Type.
 * `members` - List of Service Group Members (which are Services).
+* `comment` - Service Comment.
 
 ### Example
 
@@ -34,9 +34,8 @@ service_groups = [
   {
     id      = 335
     name    = "mgmt_Storage_RLM-Mgmt"
-    comment = ""
-    type    = "group"
     global  = true
+    type    = "group"
     members = [
       "Remote Desktop Protocol",
       "ftp",
@@ -46,6 +45,7 @@ service_groups = [
       "smtp",
       "ssh",
     ]
+    comment = "comment .."
   },
 ]
 

@@ -1,6 +1,6 @@
 # Data Source `tos_services`
 
-The `tos_services` Data Source lists Application Services from Tufin SA.
+The `tos_services` Data Source lists Global Services from Tufin SA.
 
 ## Usage
 
@@ -12,7 +12,7 @@ data "tos_services" "services_by_name" {
 
 ## Argument Reference
 
-* `name` - Name (Wildcard) of the Services to be listed.
+* `name` - Name (Wildcard) of the Global Services to be listed.
 
 ## Attribute Reference
 
@@ -22,12 +22,12 @@ List of matching Services from Tufin SA:
 
 * `id` - Service Id.
 * `name` - Service Name.
-* `comment` - Service Comment.
-* `type` - Service Type.
 * `global` - Service Global Flag.
+* `type` - Service Type.
+* `protocol` - Protocol.
 * `min` - Min Port.
 * `max` - Max Port.
-* `protocol` - Protocol.
+* `comment` - Service Comment.
 
 ### Example
 
@@ -36,12 +36,12 @@ services = [
   {
     id       = 85
     name     = "https"
-    comment  = "HTTP protocol over TLS/SSL"
-    type     = "tcp_service"
     global   = true
+    type     = "tcp_service"
+    protocol = ""
     min      = 443
     max      = 443
-    protocol = ""
+    comment  = "HTTP protocol over TLS/SSL"
   },
 ] 
 ```

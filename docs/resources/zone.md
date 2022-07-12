@@ -27,8 +27,8 @@ resource "tos_zone" "zone_1" {
 * `domain` - (Required) The Domain Name.
 * `name` - (Required) The Range Name.
 * `comment` - (Required) The Range Comment.
-* `shared` - (Optional) The Shared Zone Flag.
-* `import_to` - (Optional) List of Domains to import the Zone into (if Shared Flag is True).
+* `shared` - (Optional) The Shared Zone Flag; only valid in Mode 'tba'.
+* `import_to` - (Optional) List of Domains to import the Zone into (if Shared Flag is True); only valid in Mode 'tba'.
 * `tags` - (Optional) Resource Tags; see [Tags](tag.md) for details.
 
 ## Attribute Reference

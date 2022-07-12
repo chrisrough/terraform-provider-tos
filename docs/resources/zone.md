@@ -10,6 +10,9 @@ resource "tos_zone" "zone_1" {
 
   name    = "TestZoneTF1tba"
   comment = "Test Zone TF 1 .. Created by Terraform Provider TOS"
+  
+  shared    = true
+  import_to = ["hpc0", "hpc1", "hpc3"]
 
   tags = merge(
     var.default_tags,
@@ -24,6 +27,8 @@ resource "tos_zone" "zone_1" {
 * `domain` - (Required) The Domain Name.
 * `name` - (Required) The Range Name.
 * `comment` - (Required) The Range Comment.
+* `shared` - (Optional) The Shared Zone Flag.
+* `import_to` - (Optional) List of Domains to import the Zone into (if Shared Flag is True).
 * `tags` - (Optional) Resource Tags; see [Tags](tag.md) for details.
 
 ## Attribute Reference
@@ -58,5 +63,5 @@ The `tos_zone` Resources are imported using the identifier `id,domain`.
 ### Example
 
 ```terraform
-terraform import module.zones.tos_zone.zone_import 3946,scs0
+terraform import module.zones.tos_zone.zone_import 3946, scs0
 ```

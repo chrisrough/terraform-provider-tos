@@ -14,6 +14,12 @@ resource "tos_zone" "zone_1" {
   shared    = true
   import_to = ["hpc0", "hpc1", "hpc3"]
 
+  zone_entry {
+    ip                = "1.2.3.21/32"
+    connected_domains = ["htc0", "htc1"]
+    comment           = "ip 21"
+  }
+
   tags = merge(
     var.default_tags,
     {
@@ -29,6 +35,7 @@ resource "tos_zone" "zone_1" {
 * `comment` - (Required) The Range Comment.
 * `shared` - (Optional) The Shared Zone Flag; only valid in Mode 'tba'.
 * `import_to` - (Optional) List of Domains to import the Zone into (if Shared Flag is True); only valid in Mode 'tba'.
+* `zone_entry` - (Optional) Block(s) of Zone Entry(ies) to be added to the Zone; only valid in Mode 'tba'.
 * `tags` - (Optional) Resource Tags; see [Tags](tag.md) for details.
 
 ## Attribute Reference

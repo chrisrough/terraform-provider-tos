@@ -1,17 +1,17 @@
-# Resource `tos_server`
+# Resource `tos_host`
 
-The `tos_server` Resource manages Server (Host) Network Objects in Tufin SA.
+The `tos_host` Resource manages Host Network Objects in Tufin SA.
 
 ## Usage
 
 ```terraform
-resource "tos_server" "mars" {
+resource "tos_host" "mars" {
   domain = var.domain
   app    = var.app
 
   name    = "MARS_1"
   ip      = "1.2.3.4/32"
-  comment = "Test Server MARS 1 .. Created by Terraform Provider TOS"
+  comment = "Test Host MARS 1 .. Created by Terraform Provider TOS"
 
   tags = merge(
     var.default_tags,
@@ -25,8 +25,8 @@ resource "tos_server" "mars" {
 
 * `domain` - (Required) The Domain Name.
 * `app` - (Required) The Application Name.
-* `name` - (Required) The Server Name.
-* `ip` - (Required) The Server IP.
+* `name` - (Required) The Host Name.
+* `ip` - (Required) The Host IP.
 * `comment` - (Required) The Range Comment.
 * `tags` - (Optional) Resource Tags; see [Tags](tag.md) for details.
 
@@ -34,14 +34,14 @@ resource "tos_server" "mars" {
 
 In addition to all arguments above, the following attributes are exported:
 
-* `id` - The Server Id.
+* `id` - The Host Id.
 
 ### Example
 
 ```terraform
-resource "tos_server" "mars" {
+resource "tos_host" "mars" {
   app     = "Cloud"
-  comment = "Test Server MARS 1 .. Created by Terraform Provider TOS"
+  comment = "Test Host MARS 1 .. Created by Terraform Provider TOS"
   domain  = "scs0"
   id      = "23582"
   ip      = "1.2.3.4/32"
@@ -59,10 +59,10 @@ resource "tos_server" "mars" {
 
 ## Import
 
-The `tos_server` Resources are imported using the identifier `id,domain,app`.
+The `tos_host` Resources are imported using the identifier `id,domain,app`.
 
 ### Example
 
 ```terraform
-terraform import module.networkobjects.tos_server.server_1 19147,scs0,Cloud
+terraform import module.networkobjects.tos_:Server.host_1 19147,scs0,Cloud
 ```

@@ -43,7 +43,7 @@ Visit [Tufin](https://tufin.com) for more information on TOS.
 
 [tos_rule](resources/rule.md)
 
-[tos_server](resources/server.md)
+[tos_host](resources/host.md)
 
 [tos_subnet](resources/subnet.md)
 

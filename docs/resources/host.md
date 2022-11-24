@@ -64,5 +64,5 @@ The `tos_host` Resources are imported using the identifier `id,domain,app`.
 ### Example
 
 ```terraform
-terraform import module.networkobjects.tos_:Server.host_1 19147,scs0,Cloud
+terraform import module.networkobjects.tos_host.host_1 19147,scs0,Cloud
 ```

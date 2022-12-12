@@ -16,7 +16,6 @@ resource "tos_zone" "zone_1" {
 
   zone_entry {
     ip                = "1.2.3.21/32"
-    connected_domains = ["htc0", "htc1"]
     comment           = "ip 21"
   }
 

@@ -8,15 +8,15 @@ The `tos_zone` Resource manages Zones in Tufin ST.
 resource "tos_zone" "zone_1" {
   domain = var.domain
 
-  name    = "TestZoneTF1tba"
-  comment = "Test Zone TF 1 .. Created by Terraform Provider TOS"
-  
-  shared    = true
-  import_to = ["hpc0", "hpc1", "hpc3"]
+  name        = "TestZoneTF1tba"
+  comment     = "Test Zone TF 1 .. Created by Terraform Provider TOS"
+  parent_zone = "ParentZone"
+  shared      = true
+  import_to   = ["hpc0", "hpc1", "hpc3"]
 
   zone_entry {
-    ip                = "1.2.3.21/32"
-    comment           = "ip 21"
+    ip      = "1.2.3.21/32"
+    comment = "ip 21"
   }
 
   tags = merge(
@@ -32,6 +32,7 @@ resource "tos_zone" "zone_1" {
 * `domain` - (Required) The Domain Name.
 * `name` - (Required) The Range Name.
 * `comment` - (Required) The Range Comment.
+* `parent_zone` - (Optional) The Parent Zone (named Security Level in Mode 'tba').
 * `shared` - (Optional) The Shared Zone Flag; only valid in Mode 'tba'.
 * `import_to` - (Optional) List of Domains to import the Zone into (if Shared Flag is True); only valid in Mode 'tba'.
 * `zone_entry` - (Optional) Block(s) of Zone Entry(ies) to be added to the Zone; only valid in Mode 'tba'.
@@ -47,11 +48,12 @@ In addition to all arguments above, the following attributes are exported:
 
 ```terraform
 resource "tos_zone" "zone_1" {
-  id      = "5866"
-  domain  = "scs0"
-  comment = "Test Zone TF 1 .. Created by Terraform Provider TOS"
-  name    = "TestZoneTF1tba"
-  tags    = {
+  id         = "5866"
+  domain     = "scs0"
+  comment    = "Test Zone TF 1 .. Created by Terraform Provider TOS"
+  name       = "TestZoneTF1tba"
+  parentZone = 'ParentZone'
+  tags       = {
     "description" = "Terraform Provider TOS Showcase Zones+Zone Entries"
     "env"         = "Tufin@me"
     "name_ST"     = "TestZoneTF1tba"

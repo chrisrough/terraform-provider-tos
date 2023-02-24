@@ -42,3 +42,17 @@ provider "tos" {
 }
 ```
 
+## Origin Option
+
+The http request header 'Origin' for requests send to backend (any mode) value can be set using the 'origin' option
+in the provider configuration as shown below.
+By default, the value 'tf' is used.
+
+```terraform
+provider "tos" {
+  tba_url = "<tba url>"
+  mode    = "tba"
+  origin  = "origin123"
+}
+```
+

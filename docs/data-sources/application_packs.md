@@ -40,10 +40,11 @@ List of matching Application Packs from Tufin SC each containing:
 ```terraform
 application_packs = [
   {
-    id      = 367
-    comment = "Tag Comment .."
-    name    = "AppPack gshs IS-Service-Incoming"
-    tags    = [
+    id        = 367
+    comment   = "Tag Comment .."
+    name      = "AppPack gshs IS-Service-Incoming"
+    customer  = "gshs"
+    tags      = [
       "default",
       "Internet-IP-1",
       "Internet-IP-2",

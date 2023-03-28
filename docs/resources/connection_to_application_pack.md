@@ -11,15 +11,14 @@ resource "tos_connection_to_application_pack" "connection_to_application_pack1" 
   name        = "PACK_3"
   comment     = "PACK 3 .."
   customer    = "gshs"
-  server_tags = [
-    "Internet-IP-1",
-    "Internet-IP-2",
-  ]
   application_pack_id = 367
-  servers             = [
-    "MARS_1",
-    "RANGE_1"
-  ]
+
+  network_objects_tag {
+    network_objects = [
+      "MARS_1",
+    ]
+    tag = "Internet-IP-1"
+  }
 
   tags = merge(
     var.default_tags,
@@ -38,7 +37,7 @@ resource "tos_connection_to_application_pack" "connection_to_application_pack1" 
 * `customer` - (Required) The Connection to Application Pack Customer.
 * `server_tags` - (Required) The Server Tags.
 * `application_pack_id` - (Required) The Application Pack Id.
-* `servers` - (Required) The Servers.
+* `network_objects_tag` - (Required) The Network Objects Tag(s).
 * `tags` - (Optional) Resource Tags; see [Tags](tag.md) for details.
 
 ## Attribute Reference
@@ -57,16 +56,22 @@ resource "tos_connection_to_application_pack" "connection_to_application_pack1" 
   name        = "PACK_2022_04_25_173500"
   comment     = "PACK 2022_04_25_173500 .."
   customer    = "gshs"
-  server_tags = [
-    "Internet-IP-1",
-    "Internet-IP-2",
-  ]
   application_pack_id = 367
-  servers             = [
-    "ASTEROIDS_1",
-    "MARS_1",
-    "RANGE_1",
-  ]
+  network_objects_tag {
+    network_objects = [
+      "MARS_1",
+    ]
+    tag = "Internet-IP-1"
+  }
+
+  network_objects_tag {
+    network_objects = [
+      "RANGE_1",
+      "ASTEROIDS_1"
+    ]
+    tag = "Internet-IP-2"
+  }
+
   tags = {
     "connection_to_application_pack_SA" = "PACK_2022_04_25_173500"
     "description"                       = "Terraform Provider TOS Showcase Connection to Application Packs"

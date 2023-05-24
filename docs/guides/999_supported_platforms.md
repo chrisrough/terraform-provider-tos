@@ -11,6 +11,7 @@ The provider is available on the following OS / Architectures:
 |:-------:|:-----:|
 | darwin  | amd64 |
 |  linux  | amd64 |
+|  linux  | arm64 |
 | windows | amd64 |
 
 

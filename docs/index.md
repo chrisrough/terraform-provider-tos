@@ -29,13 +29,9 @@ Visit [Tufin](https://tufin.com) for more information on TOS.
 
 [tos_zone_entries](data-sources/zone_entries.md)
 
-[tos_networksuffixes](data-sources/networksuffixes.md)
-
 ### Resources
 
 [tos_application](resources/application.md)
-
-[tos_connection_to_application_pack](resources/connection_to_application_pack.md)
 
 [tos_group](resources/group.md)
 

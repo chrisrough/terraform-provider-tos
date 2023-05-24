@@ -5,7 +5,7 @@ subcategory: "Versions"
 
 # Current Versions
 
-## v1.1.0
+## v2.1.0
 
 Coming soon!
 
@@ -16,4 +16,4 @@ None are published at this moment.
 
 # Deprecated Versions
 
-All versions prior to v1.1.0 must not be used!
+All versions prior to v2.1.0 must not be used!

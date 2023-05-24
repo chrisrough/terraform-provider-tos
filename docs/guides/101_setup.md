@@ -24,23 +24,6 @@ provider "tos" {
 }
 ```
 
-## Mode tba
-
-```terraform
-terraform {
-  required_providers {
-    tos = {
-      source  = "chrisrough/tos"
-      version = "~> 1.0.0"
-    }
-  }
-}
-
-provider "tos" {
-  tba_url = "<tba url>"
-  mode    = "tba"
-}
-```
 
 ## Origin Option
 
@@ -48,11 +31,4 @@ The http request header 'Origin' for requests send to backend (any mode) value c
 in the provider configuration as shown below.
 By default, the value 'tf' is used.
 
-```terraform
-provider "tos" {
-  tba_url = "<tba url>"
-  mode    = "tba"
-  origin  = "origin123"
-}
-```
 

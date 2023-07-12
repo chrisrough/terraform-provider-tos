@@ -49,7 +49,7 @@ resource "tos_subnet" "milkyway" {
     "description"       = "Terraform Provider TOS Showcase Network Objects"
     "env"               = "Tufin@me"
     "network_object_SA" = "MILKYWAY_1"
-    "origin"            = "provider-tufin-tba"
+    "origin"            = "provider-tufin-tos"
     "project"           = "Terraform Provider TOS"
     "version"           = "1.0.0"
   }

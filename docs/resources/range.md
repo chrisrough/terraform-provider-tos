@@ -52,7 +52,7 @@ resource "tos_range" "asteroids" {
     "description"       = "Terraform Provider TOS Showcase Network Objects"
     "env"               = "Tufin@me"
     "network_object_SA" = "ASTEROIDS_1"
-    "origin"            = "provider-tufin-tba"
+    "origin"            = "provider-tufin-tos"
     "project"           = "Terraform Provider TOS"
     "version"           = "1.0.0"
   }

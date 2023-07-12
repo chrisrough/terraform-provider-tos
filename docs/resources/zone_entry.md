@@ -51,7 +51,7 @@ resource "tos_zone_entry" "zone_entry_1" {
     "description" = "Terraform Provider TOS Showcase Zones+Zone Entries"
     "env"         = "Tufin@me"
     "name_ST"     = "Test Zone Entry 1"
-    "origin"      = "provider-tufin-tba"
+    "origin"      = "provider-tufin-tos"
     "project"     = "Terraform Provider TOS"
     "version"     = "1.0.0"
   }

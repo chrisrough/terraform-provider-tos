@@ -65,7 +65,7 @@ resource "tos_application" "application_1" {
     "application_SC" = "Test App 2"
     "description"    = "Terraform Provider TOS Showcase Applications"
     "env"            = "Tufin@me"
-    "origin"         = "provider-tufin-tba"
+    "origin"         = "provider-tufin-tos"
     "project"        = "Terraform Provider TOS"
     "version"        = "1.0.0"
   }

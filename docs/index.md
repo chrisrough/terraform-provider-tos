@@ -17,7 +17,7 @@ Visit [Tufin](https://tufin.com) for more information on TOS.
 
 [tos_providerinfo](data-sources/provider_info.md)
 
-[tos_rules](data-sources/rules.md)
+[tos_application_connections](data-sources/application_connections.md)
 
 [tos_services](data-sources/services.md)
 
@@ -37,7 +37,7 @@ Visit [Tufin](https://tufin.com) for more information on TOS.
 
 [tos_range](resources/range.md)
 
-[tos_rule](resources/rule.md)
+[tos_application_connection](resources/application_connection.md)
 
 [tos_host](resources/host.md)
 

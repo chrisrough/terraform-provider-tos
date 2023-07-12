@@ -1,12 +1,12 @@
-# Data Source `tos_rules`
+# Data Source `tos_application_connections`
 
-The `tos_rules` Data Source lists Application Connections from Tufin SA.
+The `tos_application_connections` Data Source lists Application Connections from Tufin SA.
 
 ## Usage
 
 ```terraform
-data "tos_rules" "rules_by_name" {
-  name = "Rule 1"
+data "tos_application_connections" "application_connections_by_name" {
+  name = "APX 1"
 
   domain = var.domain
   app    = var.app
@@ -23,7 +23,7 @@ data "tos_rules" "rules_by_name" {
 
 In addition to all arguments above, the following attributes are exported.
 
-List of matching Rules from Tufin SA:
+List of matching Application Connections from Tufin SA:
 
 * `id` - Application Connection Id.
 * `name` - Application Connection Name.
@@ -41,10 +41,10 @@ List of matching Rules from Tufin SA:
 ### Example
 
 ```terraform
-rules = [
+application_connections = [
   {
     id          = 1690
-    name        = "Rule 1"
+    name        = "APX 1"
     src_servers = [
       {
         id   = 23440
@@ -71,7 +71,7 @@ rules = [
         name = "MILKYWAY_1"
       },
     ]
-    comment = "Rule 1 .."
+    comment = "APX 1 .."
   }
 ]
 ```

@@ -1,16 +1,16 @@
-# Resource `tos_rule`
+# Resource `tos_application_connection`
 
-The `tos_rule` Resource manages Application Connections in Tufin SA.
+The `tos_application_connection` Resource manages Application Connections in Tufin SA.
 
 ## Usage
 
 ```terraform
-resource "tos_rule" "rule1" {
+resource "tos_application_connection" "application_connection_1" {
   domain = var.domain
   app    = var.app
 
-  name    = "Rule 1"
-  comment = "Rule 1 .."
+  name    = "Application_Connection_1"
+  comment = "Application Connection 1 .."
 
   src_srv_ids = [
     data.tos_networkobjects.rule_src_servers.networkobjects[0].id,
@@ -29,7 +29,7 @@ resource "tos_rule" "rule1" {
   tags = merge(
     var.default_tags,
     {
-      rule_SA = format("%s", "Rule 1")
+      Application_Connection_SA = format("%s", "Application Connection 1")
     })
 }
 ```
@@ -54,13 +54,13 @@ In addition to all arguments above, the following attributes are exported:
 ### Example
 
 ```terraform
-resource "tos_rule" "rule1" {
+resource "tos_application_connection" "application_connection_1" {
   id      = "1707"
   domain      = "scs0"
   app     = "Cloud"
   
-  name    = "Rule 1"
-  comment = "Rule 1 .."
+  name    = "Application_Connection_1"
+  comment = "Application_Connection 1 .."
 
   src_srv_ids = [
     23581,
@@ -74,9 +74,9 @@ resource "tos_rule" "rule1" {
     23583,
   ]
   tags = {
-    "description" = "Terraform Provider TOS Showcase Network Objects"
+    "description" = "Terraform Provider TOS Showcase Application Connections"
     "env"         = "Tufin@me"
-    "origin"      = "provider-tufin-tba"
+    "origin"      = "provider-tufin-tos"
     "project"     = "Terraform Provider TOS"
     "rule_SA"     = "Rule 1"
     "version"     = "1.0.0"

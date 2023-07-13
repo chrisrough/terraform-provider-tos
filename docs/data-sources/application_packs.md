@@ -12,7 +12,7 @@ data "tos_application_packs" "application_packs_by_name" {
   ]
   name = "App"
 
-  domain = var.domain
+  customer = var.customer
   app    = var.app
 }
 ```
@@ -21,7 +21,7 @@ data "tos_application_packs" "application_packs_by_name" {
 
 * `customers` - (Required) The List of Customers to list Application Packs from.
 * `name` - (Required) The Name (Wildcard) of Application Packs to be listed.
-* `domain` - (Required) The Domain Name.
+* `customer` - (Required) The Customer Name.
 * `app` - (Required) The Application Name.
 
 ## Attribute Reference

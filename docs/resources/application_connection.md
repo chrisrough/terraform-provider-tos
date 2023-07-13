@@ -6,8 +6,8 @@ The `tos_application_connection` Resource manages Application Connections in Tuf
 
 ```terraform
 resource "tos_application_connection" "application_connection_1" {
-  domain = var.domain
-  app    = var.app
+  customer = var.customer
+  app      = var.app
 
   name    = "Application_Connection_1"
   comment = "Application Connection 1 .."
@@ -36,28 +36,28 @@ resource "tos_application_connection" "application_connection_1" {
 
 ## Argument Reference
 
-* `domain` - (Required) The Domain Name.
+* `customer` - (Required) The Customer Name.
 * `app` - (Required) The Application Name.
-* `name` - (Required) The Rule Name.
-* `comment` - (Required) The Rule Comment.
-* `src_srv_ids` - (Required) The Rule's Source Server Ids.
-* `svc_ids` - (Required) The Rule's Service Server Ids.
-* `dst_srv_ids` - (Required) Rule's Destination Server Ids.
+* `name` - (Required) The Application Connection Name.
+* `comment` - (Required) The Comment.
+* `src_srv_ids` - (Required) The Application Connection's Source Server Ids.
+* `svc_ids` - (Required) The Application Connection's Service Server Ids.
+* `dst_srv_ids` - (Required) Application Connection's Destination Server Ids.
 * `tags` - (Optional) Resource Tags; see [Tags](tag.md) for details.
 
 ## Attribute Reference
 
 In addition to all arguments above, the following attributes are exported:
 
-* `id` - The Rule Id.
+* `id` - The Application Connection Id.
 
 ### Example
 
 ```terraform
 resource "tos_application_connection" "application_connection_1" {
-  id      = "1707"
-  domain      = "scs0"
-  app     = "Cloud"
+  id       = "1707"
+  customer = "scs0"
+  app      = "Cloud"
   
   name    = "Application_Connection_1"
   comment = "Application_Connection 1 .."
@@ -78,7 +78,7 @@ resource "tos_application_connection" "application_connection_1" {
     "env"         = "Tufin@me"
     "origin"      = "provider-tufin-tos"
     "project"     = "Terraform Provider TOS"
-    "rule_SA"     = "Rule 1"
+    "application_connection_SA"     = "Application Connection 1"
     "version"     = "1.0.0"
   }
 }
@@ -87,10 +87,10 @@ resource "tos_application_connection" "application_connection_1" {
 
 ## Import
 
-The `tos_rule` Resources are imported using the identifier `id,domain,app`.
+The `tos_application_connection` Resources are imported using the identifier `id,customer,app`.
 
 ### Example
 
 ```terraform
-terraform import module.networkobjects.tos_rule.rule_1 19147,scs0,Cloud
+terraform import module.networkobjects.tos_application_connection.rule_1 19147,scs0,Cloud
 ```

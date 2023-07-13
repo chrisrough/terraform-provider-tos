@@ -6,8 +6,8 @@ The `tos_range` Resource manages Range Network Objects in Tufin SA.
 
 ```terraform
 resource "tos_range" "asteroids" {
-  domain = var.domain
-  app    = var.app
+  customer = var.customer
+  app      = var.app
 
   name     = "ASTEROIDS_1"
   first_ip = "1.2.3.1"
@@ -23,7 +23,7 @@ resource "tos_range" "asteroids" {
 
 ## Argument Reference
 
-* `domain` - (Required) The Domain Name.
+* `customer` - (Required) The Customer Name.
 * `app` - (Required) The Application Name.
 * `name` - (Required) The Range Name.
 * `first_ip` - (Required) The first IP in the Range.
@@ -42,7 +42,7 @@ In addition to all arguments above, the following attributes are exported:
 ```terraform
 resource "tos_range" "asteroids" {
   id       = "23581"
-  domain   = "scs0"
+  customer = "scs0"
   app      = "Cloud"
   name     = "ASTEROIDS_1"
   comment  = "Test Range ASTEROIDS 1 .. Created by Terraform Provider TOS"
@@ -62,7 +62,7 @@ resource "tos_range" "asteroids" {
 
 ## Import
 
-The `tos_range` Resources are imported using the identifier `id,domain,app`.
+The `tos_range` Resources are imported using the identifier `id,customer,app`.
 
 ### Example
 

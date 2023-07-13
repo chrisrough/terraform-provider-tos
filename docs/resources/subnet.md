@@ -6,8 +6,8 @@ The `tos_subnet` Resource manages Subnet Network Objects in Tufin SA.
 
 ```terraform
 resource "tos_subnet" "milkyway" {
-  domain = var.domain
-  app    = var.app
+  customer = var.customer
+  app      = var.app
 
   name    = "MILKYWAY_1"
   ip      = "1.2.3.0/28"
@@ -22,7 +22,7 @@ resource "tos_subnet" "milkyway" {
 
 ## Argument Reference
 
-* `domain` - (Required) The Domain Name.
+* `customer` - (Required) The Customer Name.
 * `app` - (Required) The Application Name.
 * `name` - (Required) The Subnet Name.
 * `ip` - (Required) The Subnet CIDR.
@@ -39,13 +39,13 @@ In addition to all arguments above, the following attributes are exported:
 
 ```terraform
 resource "tos_subnet" "milkyway" {
-  app     = "Cloud"
-  comment = "Test Subnet MILKYWAY 1 .. Created by Terraform Provider TOS"
-  domain  = "scs0"
-  id      = "23583"
-  ip      = "1.2.3.0/28"
-  name    = "MILKYWAY_1"
-  tags    = {
+  app      = "Cloud"
+  comment  = "Test Subnet MILKYWAY 1 .. Created by Terraform Provider TOS"
+  customer = "scs0"
+  id       = "23583"
+  ip       = "1.2.3.0/28"
+  name     = "MILKYWAY_1"
+  tags     = {
     "description"       = "Terraform Provider TOS Showcase Network Objects"
     "env"               = "Tufin@me"
     "network_object_SA" = "MILKYWAY_1"
@@ -59,7 +59,7 @@ resource "tos_subnet" "milkyway" {
 
 ## Import
 
-The `tos_subnet` Resources are imported using the identifier `id,domain,app`.
+The `tos_subnet` Resources are imported using the identifier `id,customer,app`.
 
 ### Example
 

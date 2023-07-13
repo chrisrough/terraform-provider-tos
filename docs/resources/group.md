@@ -6,8 +6,8 @@ The `tos_group` Resource manages Groups of Network Objects (Servers, Subnets, Ra
 
 ```terraform
 resource "tos_group" "group_1" {
-  domain = var.domain
-  app    = var.app
+  customer = var.customer
+  app     = var.app
 
   name    = "GROUP_1"
   comment = "GROUP 1 .."
@@ -29,7 +29,7 @@ resource "tos_group" "group_1" {
 
 ## Argument Reference
 
-* `domain` - (Required) The Domain Name.
+* `customer` - (Required) The Customer Name.
 * `app` - (Required) The Application Name.
 * `name` - (Required) The Group Name.
 * `comment` - (Required) The Group Comment.
@@ -46,12 +46,12 @@ In addition to all arguments above, the following attributes are exported:
 
 ```terraform
 resource "tos_group" "group_1" {
-  id      = "23586"
-  domain  = "scs0"
-  app     = "Cloud"
-  name    = "GROUP_1"
-  comment = "GROUP 1 .."
-  members = [
+  id       = "23586"
+  customer = "scs0"
+  app      = "Cloud"
+  name     = "GROUP_1"
+  comment  = "GROUP 1 .."
+  members  = [
     "ASTEROIDS_1",
     "MARS_1",
     "MILKYWAY_1",

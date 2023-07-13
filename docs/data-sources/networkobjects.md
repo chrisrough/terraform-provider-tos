@@ -8,15 +8,15 @@ The `tos_networkobjects` Data Source lists Network Objects from Tufin SA.
 data "tos_networkobjects" "networkobjects_by_name_host" {
   name = "DRACO"
 
-  domain = var.domain
-  app    = var.app
+  customer = var.customer
+  app      = var.app
 }
 ```
 
 ## Argument Reference
 
 * `name` - (Required) The Network Object Name (Filter).
-* `domain` - (Required) The Domain Name.
+* `customer` - (Required) The Customer Name.
 * `app` - (Required) The Application Name.
 
 ## Attribute Reference

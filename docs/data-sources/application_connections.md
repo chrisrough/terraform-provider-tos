@@ -8,15 +8,15 @@ The `tos_application_connections` Data Source lists Application Connections from
 data "tos_application_connections" "application_connections_by_name" {
   name = "APX 1"
 
-  domain = var.domain
-  app    = var.app
+  customer = var.customer
+  app      = var.app
 }
 ```
 
 ## Argument Reference
 
 * `name` - (Required) Name (Wildcard) of the Application Connections to be listed.
-* `domain` - (Required) The Domain Name.
+* `customer` - (Required) The Customer Name.
 * `app` - (Required) The Application Name.
 
 ## Attribute Reference

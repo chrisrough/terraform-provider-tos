@@ -6,8 +6,8 @@ The `tos_host` Resource manages Host Network Objects in Tufin SA.
 
 ```terraform
 resource "tos_host" "mars" {
-  domain = var.domain
-  app    = var.app
+  customer = var.customer
+  app      = var.app
 
   name    = "MARS_1"
   ip      = "1.2.3.4/32"
@@ -23,7 +23,7 @@ resource "tos_host" "mars" {
 
 ## Argument Reference
 
-* `domain` - (Required) The Domain Name.
+* `customer` - (Required) The Customer Name.
 * `app` - (Required) The Application Name.
 * `name` - (Required) The Host Name.
 * `ip` - (Required) The Host IP.
@@ -40,13 +40,13 @@ In addition to all arguments above, the following attributes are exported:
 
 ```terraform
 resource "tos_host" "mars" {
-  app     = "Cloud"
-  comment = "Test Host MARS 1 .. Created by Terraform Provider TOS"
-  domain  = "scs0"
-  id      = "23582"
-  ip      = "1.2.3.4/32"
-  name    = "MARS_1"
-  tags    = {
+  app      = "Cloud"
+  comment  = "Test Host MARS 1 .. Created by Terraform Provider TOS"
+  customer = "scs0"
+  id       = "23582"
+  ip       = "1.2.3.4/32"
+  name     = "MARS_1"
+  tags     = {
     "description"       = "Terraform Provider TOS Showcase Network Objects"
     "env"               = "Tufin@me"
     "network_object_SA" = "MARS_1"
@@ -59,7 +59,7 @@ resource "tos_host" "mars" {
 
 ## Import
 
-The `tos_host` Resources are imported using the identifier `id,domain,app`.
+The `tos_host` Resources are imported using the identifier `id,customer,app`.
 
 ### Example
 

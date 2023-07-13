@@ -6,8 +6,8 @@ The `tos_ticket` Resource manages Tickets in Tufin SA.
 
 ```terraform
 resource "tos_ticket" "tix_1" {
-  domain = var.domain
-  app    = "TestApp2"
+  customer = var.customer
+  app      = "TestApp2"
 
   subject  = "Test Ticket 1"
   workflow = "Default"
@@ -22,7 +22,7 @@ resource "tos_ticket" "tix_1" {
 
 ## Argument Reference
 
-* `domain` - (Required) The Domain Name.
+* `customer` - (Required) The Customer Name.
 * `app` - (Required) The Application Name.
 * `subject` - (Required) The Ticket Subject.
 * `workflow` - (Required) The Ticket Workflow.
@@ -38,9 +38,9 @@ In addition to all arguments above, the following attributes are exported:
 
 ```terraform
 resource "tos_ticket" "tix_1" {
-  id     = "123"
-  domain = var.domain
-  app    = "TestApp2"
+  id       = "123"
+  customer = var.customer
+  app      = "TestApp2"
 
   subject  = "Test Ticket 1"
   workflow = "Default"
